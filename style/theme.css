@@ -1,0 +1,55 @@
+body {
+  padding-top: 70px;
+}
+.clearfix {clear:both;}
+.navbar {min-height:70px !important;}
+.navbar  .container {padding-top:10px;}
+.navbar-brand { color:#fff;}
+.bg-gray {background:#333}
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.margin-bottom-30 {margin-top:30px;}
+
+.section-break {margin: 30px 0 30px;}
+.no-gutter [class*="col-"] { padding-left:0; padding-right:0 ;margin:0}
+
+.pinboard  .row {
+ -moz-column-width: 18em;
+ -webkit-column-width: 18em;
+ -moz-column-gap: 1em;
+ -webkit-column-gap:1em; 
+  
+}
+footer, footer a {color:#fff; padding: 25px 0;   text-align: center;}
+
+@media (max-width: 800px) {
+.margin-top-30 .col-md-4 {margin-top:30px;}
+.margin-top-30 .col-md-4:first-child {margin-top:0}
+}
+
+.overlay-cap {background:rgba(44,43,43,0.8) ; margin-top:-70px !important; z-index: 9999; position:relative ; padding:10px; color:#fff;}
+
+/*-------FONTS-------*/
+.text-bold {font-weight:700}
+.text-light {font-weight:300}
+.text-medium {font-weight:500}
+.text-semibold {font-weight:600}
+.text-extrabold {font-weight:800}
+.text-ultrabold{font-weight:900}
+.font-montserrat {font-family: 'Montserrat', sans-serif;}
+.font-opensans {font-family: 'Open Sans', sans-serif;}
+.font-roboto {font-family: 'Roboto', sans-serif;}
+
+.thumbnail .img-thumbnail {border: 0; padding:0;}

